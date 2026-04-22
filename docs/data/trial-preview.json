@@ -1,0 +1,218 @@
+{
+  "title": "Three-Match Solo CPU Trial",
+  "description": "A limited browser trial with exactly three free solo-vs-CPU matches. Each match has its own non-overlapping question set.",
+  "matchesAllowed": 3,
+  "defaultQuestionTimerSeconds": 20,
+  "matches": [
+    {
+      "id": "opening-lockout",
+      "title": "Opening Lockout",
+      "cpuName": "Redline Rival",
+      "cpuStyle": "Quick out of the gate, softer on arts.",
+      "description": "A broad warm-up showdown that teaches the trial flow without giving away the full product.",
+      "questionTimerSeconds": 20,
+      "perfectScore": 50,
+      "questions": [
+        {
+          "id": "trial_1_george",
+          "category": "social_studies",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "After leading the Continental Army to victory in the American Revolution, this Virginian became the first president of the United States in 1789. He warned against permanent foreign alliances in his Farewell Address. Name this first U.S. president.",
+          "answer": "George Washington",
+          "acceptedAnswers": ["george washington", "washington"],
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_1_sesame",
+          "category": "pop_culture_sports",
+          "difficulty": 1,
+          "roundType": "individual",
+          "questionText": "Debuting in 1969, this educational children's television series is set on an urban street populated by Big Bird, Oscar the Grouch, and Cookie Monster. Name this long-running program.",
+          "answer": "Sesame Street",
+          "acceptedAnswers": ["sesame street"],
+          "choices": {
+            "A": "Mister Rogers' Neighborhood",
+            "B": "Reading Rainbow",
+            "C": "Sesame Street",
+            "D": "The Electric Company"
+          },
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_1_modelt",
+          "category": "science_technology",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "Introduced by Ford Motor Company in 1908, this automobile became famous for assembly-line production and widespread affordability. Name this pioneering car, commonly nicknamed the Tin Lizzie.",
+          "answer": "Model T",
+          "acceptedAnswers": ["model t"],
+          "points": 10,
+          "cpuCorrect": false
+        },
+        {
+          "id": "trial_1_math4digit",
+          "category": "mathematics",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "Add 750 and 750. What is the sum?",
+          "answer": "1500",
+          "acceptedAnswers": ["1500"],
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_1_starry",
+          "category": "arts_entertainment",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "This Vincent van Gogh painting depicts a night sky of swirling stars above a quiet village and a dark cypress tree. It was painted while the artist was at Saint-Remy. Name this work.",
+          "answer": "The Starry Night",
+          "acceptedAnswers": ["the starry night", "starry night"],
+          "points": 10,
+          "cpuCorrect": false
+        }
+      ]
+    },
+    {
+      "id": "night-shift-showdown",
+      "title": "Night Shift Showdown",
+      "cpuName": "Switchback Sigma",
+      "cpuStyle": "Tough on current events and science, vulnerable on geometry.",
+      "description": "A sharper second exhibition match with more pressure and a CPU that capitalizes on hesitation.",
+      "questionTimerSeconds": 20,
+      "perfectScore": 50,
+      "questions": [
+        {
+          "id": "trial_2_grapes",
+          "category": "language_literature",
+          "difficulty": 2,
+          "roundType": "team_discussion",
+          "questionText": "Published in 1939, this John Steinbeck novel follows the Joad family as they travel from Oklahoma to California during the Dust Bowl. It won the National Book Award and Pulitzer Prize. Name this novel.",
+          "answer": "The Grapes of Wrath",
+          "acceptedAnswers": ["the grapes of wrath", "grapes of wrath"],
+          "points": 10,
+          "cpuCorrect": false
+        },
+        {
+          "id": "trial_2_nato",
+          "category": "current_events",
+          "difficulty": 1,
+          "roundType": "individual",
+          "questionText": "Founded in 1949, this military alliance includes the United States, Canada, and many European nations. Its name is often abbreviated by a four-letter acronym. Name this alliance.",
+          "answer": "NATO",
+          "acceptedAnswers": ["nato"],
+          "choices": {
+            "A": "NAFTA",
+            "B": "NATO",
+            "C": "OPEC",
+            "D": "UNESCO"
+          },
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_2_triangle",
+          "category": "mathematics",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "A right triangle has legs measuring 5 centimeters and 12 centimeters. Using the Pythagorean theorem, find the length of the hypotenuse in centimeters.",
+          "answer": "13",
+          "acceptedAnswers": ["13"],
+          "points": 10,
+          "cpuCorrect": false
+        },
+        {
+          "id": "trial_2_jackie",
+          "category": "pop_culture_sports",
+          "difficulty": 2,
+          "roundType": "team_discussion",
+          "questionText": "In 1947, this Brooklyn Dodgers infielder broke Major League Baseball's modern color barrier. He later had his number 42 retired across all MLB teams. Name this player.",
+          "answer": "Jackie Robinson",
+          "acceptedAnswers": ["jackie robinson", "robinson"],
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_2_mito",
+          "category": "science_technology",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "This organelle is often called the powerhouse of the cell because it produces most cellular ATP through respiration. Name this organelle.",
+          "answer": "Mitochondrion",
+          "acceptedAnswers": ["mitochondrion", "mitochondria"],
+          "points": 10,
+          "cpuCorrect": true
+        }
+      ]
+    },
+    {
+      "id": "final-light-gauntlet",
+      "title": "Final Light Gauntlet",
+      "cpuName": "Judge Zero",
+      "cpuStyle": "Cold-blooded finisher with a taste for history and science.",
+      "description": "The last free trial match. Win this one and the browser trial has shown everything it is supposed to show.",
+      "questionTimerSeconds": 20,
+      "perfectScore": 50,
+      "questions": [
+        {
+          "id": "trial_3_magna",
+          "category": "social_studies",
+          "difficulty": 2,
+          "roundType": "team_discussion",
+          "questionText": "Sealed in 1215 under King John of England, this charter limited royal power and became an important foundation for later constitutional government. Name this document.",
+          "answer": "Magna Carta",
+          "acceptedAnswers": ["magna carta"],
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_3_marlee",
+          "category": "pop_culture_sports",
+          "difficulty": 2,
+          "roundType": "team_discussion",
+          "questionText": "In 1986, this Deaf actress won the Academy Award for Best Actress for Children of a Lesser God. She later appeared on television in Reasonable Doubts and other series. Name this actress.",
+          "answer": "Marlee Matlin",
+          "acceptedAnswers": ["marlee matlin", "matlin"],
+          "points": 10,
+          "cpuCorrect": false
+        },
+        {
+          "id": "trial_3_dpn",
+          "category": "potpourri",
+          "difficulty": 2,
+          "roundType": "potpourri",
+          "questionText": "The 1988 Deaf President Now protest at Gallaudet University ended with the selection of this man as the university's first Deaf president. Name him.",
+          "answer": "I. King Jordan",
+          "acceptedAnswers": ["i. king jordan", "iking jordan", "i king jordan", "jordan"],
+          "points": 10,
+          "cpuCorrect": true
+        },
+        {
+          "id": "trial_3_pun",
+          "category": "language_literature",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "This figure of speech uses a word or phrase with more than one meaning, often for humorous or rhetorical effect. Shakespeare employs it in Romeo and Juliet when Mercutio says he will be found 'a grave man.' Name this device.",
+          "answer": "Pun",
+          "acceptedAnswers": ["pun"],
+          "points": 10,
+          "cpuCorrect": false
+        },
+        {
+          "id": "trial_3_neutron",
+          "category": "science_technology",
+          "difficulty": 1,
+          "roundType": "team_discussion",
+          "questionText": "Discovered by James Chadwick in 1932, this subatomic particle has approximately the same mass as a proton but carries no electric charge. Name this particle.",
+          "answer": "Neutron",
+          "acceptedAnswers": ["neutron"],
+          "points": 10,
+          "cpuCorrect": true
+        }
+      ]
+    }
+  ]
+}
