@@ -1,0 +1,1037 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Trivia Challenge Bowl Installer</title>
+    <meta
+      name="description"
+      content="Download Trivia Challenge Bowl for macOS, Windows, or Linux. Create an account, start playing, study locally, and host same-Wi-Fi matches with almost no setup."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #030510;
+        --bg-soft: #10162a;
+        --panel: rgba(9, 18, 34, 0.8);
+        --panel-strong: rgba(9, 19, 38, 0.94);
+        --line: rgba(151, 180, 213, 0.14);
+        --text: #eef7ff;
+        --muted: #8fa8c2;
+        --soft: #60758d;
+        --accent: #79fff2;
+        --accent-2: #63e8ff;
+        --accent-3: #b2ff71;
+        --accent-4: #ff69d8;
+        --accent-5: #7f7cff;
+        --shadow: 0 26px 80px rgba(0, 0, 0, 0.42);
+        --radius-xl: 28px;
+        --radius-lg: 20px;
+        --radius-md: 16px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "SF Pro Display", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at 14% 8%, rgba(127, 124, 255, 0.22), transparent 24%),
+          radial-gradient(circle at 82% 12%, rgba(255, 105, 216, 0.18), transparent 22%),
+          radial-gradient(circle at 60% 74%, rgba(121, 255, 242, 0.15), transparent 26%),
+          radial-gradient(circle at 32% 92%, rgba(178, 255, 113, 0.1), transparent 18%),
+          linear-gradient(180deg, #02040b 0%, var(--bg) 42%, #071220 100%);
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .page-shell {
+        width: min(1220px, calc(100vw - 2rem));
+        margin: 0 auto;
+        padding: 1.5rem 0 3rem;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        padding: 0.9rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(6, 14, 27, 0.62);
+        backdrop-filter: blur(14px);
+        box-shadow: var(--shadow);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .brand-mark {
+        width: 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        background:
+          radial-gradient(circle at 32% 28%, #ffffff, transparent 24%),
+          conic-gradient(from 120deg, var(--accent-4), var(--accent-2), var(--accent-3), var(--accent-5), var(--accent-4));
+        box-shadow:
+          0 0 32px rgba(99, 232, 255, 0.42),
+          0 0 48px rgba(255, 105, 216, 0.28);
+      }
+
+      .topbar-links {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .topbar-links a {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+      }
+
+      .panel {
+        border-radius: var(--radius-xl);
+        border: 1px solid var(--line);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+          var(--panel);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(18px);
+      }
+
+      .hero-copy {
+        padding: 2.2rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-copy::before {
+        content: "";
+        position: absolute;
+        inset: -18% auto auto -8%;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(99, 232, 255, 0.2), transparent 66%);
+        pointer-events: none;
+        animation: drift 14s ease-in-out infinite alternate;
+      }
+
+      .hero-copy::after {
+        content: "";
+        position: absolute;
+        inset: auto -6% -24% auto;
+        width: 19rem;
+        height: 19rem;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(255, 105, 216, 0.16), transparent 68%);
+        pointer-events: none;
+        animation: drift 18s ease-in-out infinite alternate-reverse;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.45rem 0.9rem;
+        border-radius: 999px;
+        color: var(--accent);
+        border: 1px solid rgba(111, 255, 226, 0.24);
+        background: rgba(111, 255, 226, 0.08);
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 1rem 0 0.6rem;
+        font-size: clamp(3rem, 6vw, 5.1rem);
+        line-height: 0.92;
+        letter-spacing: -0.06em;
+        max-width: 10ch;
+      }
+
+      .hero-gradient {
+        background: linear-gradient(135deg, #ffffff 0%, #c7f8ff 28%, #79fff2 55%, #ff84df 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .hero-copy p {
+        max-width: 58ch;
+      }
+
+      .hero-copy p,
+      .hero-side p,
+      .section-subtitle,
+      .modal-copy,
+      .cli-card p,
+      .status-note {
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      .cta-row,
+      .secondary-row {
+        display: flex;
+        gap: 0.9rem;
+        flex-wrap: wrap;
+        margin-top: 1.2rem;
+      }
+
+      button,
+      .button-link {
+        min-height: 54px;
+        border-radius: 16px;
+        padding: 0.9rem 1.2rem;
+        border: 0;
+        cursor: pointer;
+        font: inherit;
+        transition:
+          transform 0.22s ease,
+          background 0.22s ease,
+          border-color 0.22s ease,
+          box-shadow 0.22s ease;
+      }
+
+      .button-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 1.35;
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+
+      .button-primary {
+        background: linear-gradient(135deg, var(--accent), var(--accent-2) 52%, var(--accent-4));
+        color: #04171d;
+        font-weight: 800;
+        box-shadow:
+          0 18px 50px rgba(99, 232, 255, 0.22),
+          0 10px 34px rgba(255, 105, 216, 0.18);
+      }
+
+      .button-secondary {
+        background: rgba(255, 255, 255, 0.03);
+        color: var(--text);
+        border: 1px solid var(--line);
+      }
+
+      button:hover,
+      .button-link:hover {
+        transform: translateY(-1px);
+      }
+
+      .hero-side {
+        padding: 1.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-side::before {
+        content: "";
+        position: absolute;
+        inset: -10% -14% auto auto;
+        width: 16rem;
+        height: 16rem;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(127, 124, 255, 0.18), transparent 70%);
+        pointer-events: none;
+      }
+
+      .stat-chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+      }
+
+      .stat-chip {
+        flex: 1 1 140px;
+        min-width: 0;
+        padding: 1rem;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.025)),
+          rgba(255, 255, 255, 0.03);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      }
+
+      .stat-chip strong {
+        display: block;
+        font-size: 1.35rem;
+        margin-bottom: 0.2rem;
+        letter-spacing: -0.04em;
+      }
+
+      .install-flow {
+        display: grid;
+        gap: 0.9rem;
+      }
+
+      .flow-card {
+        padding: 1rem;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .flow-card strong {
+        display: block;
+        margin-bottom: 0.35rem;
+      }
+
+      .section {
+        margin-top: 1.25rem;
+        padding: 1.35rem;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: flex-end;
+        flex-wrap: wrap;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: clamp(1.55rem, 2.7vw, 2.1rem);
+        letter-spacing: -0.04em;
+      }
+
+      .grid-3,
+      .grid-2 {
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .grid-3 > *,
+      .grid-2 > * {
+        min-width: 0;
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .feature-card,
+      .mock-card,
+      .cli-card,
+      .release-card {
+        padding: 1.15rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.025);
+      }
+
+      .feature-card {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .feature-card::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--accent-2), var(--accent-4), var(--accent-3));
+        opacity: 0.95;
+      }
+
+      .feature-card .role-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        margin-bottom: 0.8rem;
+        padding: 0.35rem 0.7rem;
+        border-radius: 999px;
+        font-size: 0.78rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #e8f6ff;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .feature-card strong,
+      .release-card strong,
+      .cli-card strong {
+        display: block;
+        margin-bottom: 0.35rem;
+      }
+
+      .mock-shot {
+        border-radius: 20px;
+        min-height: 250px;
+        padding: 1rem;
+        border: 1px solid rgba(99, 232, 255, 0.12);
+        background:
+          linear-gradient(180deg, rgba(99, 232, 255, 0.08), rgba(255, 255, 255, 0.01)),
+          rgba(5, 11, 20, 0.88);
+        display: flex;
+        flex-direction: column;
+        gap: 0.85rem;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .mock-shot::after {
+        content: "";
+        position: absolute;
+        inset: auto -18% -35% auto;
+        width: 14rem;
+        height: 14rem;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(255, 105, 216, 0.16), transparent 68%);
+        pointer-events: none;
+      }
+
+      .mock-topbar,
+      .mock-line {
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.07);
+      }
+
+      .mock-topbar {
+        width: 38%;
+        height: 0.9rem;
+      }
+
+      .mock-grid {
+        display: grid;
+        gap: 0.75rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        flex: 1;
+      }
+
+      .mock-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .mock-line {
+        height: 0.8rem;
+      }
+
+      .mock-line.short {
+        width: 62%;
+      }
+
+      .mock-line.long {
+        width: 100%;
+      }
+
+      code,
+      pre {
+        font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, monospace;
+      }
+
+      pre {
+        margin: 0;
+        white-space: pre-wrap;
+        word-break: break-word;
+        padding: 1rem;
+        border-radius: 18px;
+        background: rgba(2, 9, 17, 0.88);
+        color: #d6f6ff;
+        border: 1px solid rgba(99, 232, 255, 0.1);
+      }
+
+      .release-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+        margin-top: 0.85rem;
+      }
+
+      .pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.45rem 0.8rem;
+        border-radius: 999px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.03);
+        font-size: 0.84rem;
+        max-width: 100%;
+        white-space: normal;
+        overflow-wrap: anywhere;
+      }
+
+      .hero-promise {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.85rem;
+        margin-top: 1.3rem;
+      }
+
+      .promise-card {
+        padding: 1rem;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .promise-card strong {
+        display: block;
+        margin-bottom: 0.35rem;
+        font-size: 1rem;
+      }
+
+      .launch-banner {
+        margin-top: 1rem;
+        padding: 1rem 1.05rem;
+        border-radius: 18px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background:
+          linear-gradient(90deg, rgba(121, 255, 242, 0.12), rgba(127, 124, 255, 0.08), rgba(255, 105, 216, 0.12)),
+          rgba(255, 255, 255, 0.025);
+      }
+
+      .launch-banner strong {
+        display: block;
+        margin-bottom: 0.35rem;
+      }
+
+      .footer {
+        margin-top: 1.25rem;
+        padding: 1.2rem;
+        text-align: center;
+        color: var(--soft);
+        font-size: 0.92rem;
+      }
+
+      @keyframes drift {
+        from {
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+        to {
+          transform: translate3d(1.5rem, 1.4rem, 0) scale(1.06);
+        }
+      }
+
+      dialog {
+        border: 0;
+        padding: 0;
+        border-radius: 28px;
+        width: min(700px, calc(100vw - 1.5rem));
+        background: transparent;
+      }
+
+      dialog::backdrop {
+        background: rgba(1, 5, 10, 0.76);
+        backdrop-filter: blur(8px);
+      }
+
+      .modal-shell {
+        padding: 1.25rem;
+        border-radius: 28px;
+        border: 1px solid rgba(111, 255, 226, 0.16);
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02)),
+          var(--panel-strong);
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.46);
+      }
+
+      .modal-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+
+      .modal-header > div {
+        min-width: 0;
+      }
+
+      .modal-header h2,
+      .modal-copy,
+      .status-note {
+        overflow-wrap: anywhere;
+        word-break: break-word;
+      }
+
+      .close-button {
+        min-height: 42px;
+        width: 42px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.04);
+        color: var(--text);
+        border: 1px solid var(--line);
+        flex: 0 0 auto;
+      }
+
+      .modal-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-top: 1rem;
+      }
+
+      .modal-actions > * {
+        flex: 1 1 220px;
+        min-width: min(220px, 100%);
+      }
+
+      .status-note {
+        margin: 0.8rem 0 0;
+      }
+
+      @media (max-width: 980px) {
+        .hero,
+        .release-grid,
+        .grid-3,
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+
+        .hero-promise {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        * {
+          transition: none !important;
+          animation: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar panel">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"></div>
+          <span>Trivia Challenge Bowl</span>
+        </div>
+        <div class="topbar-links">
+          <a href="#download">Install</a>
+          <a href="#experience">Experience</a>
+          <a href="#cli">CLI</a>
+          <a href="https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest">Releases</a>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="panel hero-copy">
+          <div class="eyebrow" id="eyebrow">Detecting your platform</div>
+          <h1><span class="hero-gradient">Fast local play. Electric presentation. Zero nonsense.</span></h1>
+          <p>
+            Trivia Challenge Bowl turns study nights, practice sessions, and live same-Wi-Fi matches into one polished desktop experience. Install it, sign in, and move straight into the room without getting dragged through technical setup screens.
+          </p>
+          <div class="cta-row">
+            <button class="button-primary" id="primary-download">Prepare Download</button>
+            <a class="button-secondary button-link" href="https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest">See All Release Assets</a>
+          </div>
+          <div class="secondary-row">
+            <span class="pill" id="release-pill">Stable channel</span>
+            <span class="pill" id="version-pill">Version loading</span>
+            <span class="pill">Local-first desktop app</span>
+          </div>
+          <div class="hero-promise">
+            <div class="promise-card">
+              <strong>Create your account and go</strong>
+              <span class="section-subtitle">No setup maze. No networking checklist. Just log in and land on the main actions immediately.</span>
+            </div>
+            <div class="promise-card">
+              <strong>Quick Host feels instant</strong>
+              <span class="section-subtitle">Start a room, show a QR code, send the join link, and keep the match moving without teaching anyone tech.</span>
+            </div>
+            <div class="promise-card">
+              <strong>Same visual polish everywhere</strong>
+              <span class="section-subtitle">macOS, Windows, and Linux all get the same stable desktop-first experience.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel hero-side">
+          <div>
+            <h2 style="margin: 0 0 0.35rem">Made for momentum</h2>
+            <p class="section-subtitle">The public install flow is short, the home screen is obvious, and the live-room experience is built around confidence instead of menus and friction.</p>
+          </div>
+          <div class="stat-chip-row">
+            <div class="stat-chip">
+              <strong>Account and action</strong>
+              <span>Create an account or log in, then move directly into play, study, or hosting.</span>
+            </div>
+            <div class="stat-chip">
+              <strong>QR-first hosting</strong>
+              <span>Invite others with a QR code, join code, and copyable room link the moment the room opens.</span>
+            </div>
+            <div class="stat-chip">
+              <strong>Desktop-native feel</strong>
+              <span>Stable installers, remembered sessions, and a clean high-contrast interface built for repeated use.</span>
+            </div>
+          </div>
+          <div class="launch-banner">
+            <strong>Launch promise</strong>
+            <span class="section-subtitle">Trivia Challenge Bowl is designed to feel like a premium event-night app, not a clunky utility portal.</span>
+          </div>
+          <div class="install-flow">
+            <div class="flow-card">
+              <strong>1. Grab the right installer</strong>
+              <span>The landing page detects macOS, Windows, or Linux and guides you to the right download.</span>
+            </div>
+            <div class="flow-card">
+              <strong>2. Sign in and hit the home screen</strong>
+              <span>No setup wizard. No network form. Just your account and the main actions.</span>
+            </div>
+            <div class="flow-card">
+              <strong>3. Launch a room or study instantly</strong>
+              <span>Quick Host immediately gives you a QR code, join code, and link so the room can fill fast.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel" id="experience">
+        <div class="section-header">
+          <div>
+            <h2>Three roles. One premium interface.</h2>
+            <p class="section-subtitle">Every public role gets the same visual quality and speed. The difference is capability, not clutter.</p>
+          </div>
+          <span class="pill">Built for study nights, team sessions, and live rooms</span>
+        </div>
+        <div class="grid-3">
+          <div class="feature-card">
+            <span class="role-tag">Fan Mode</span>
+            <strong>Fan</strong>
+            <span class="section-subtitle">Jump into casual play, sharpen recall, and stay close to the game without being buried under power-user controls.</span>
+          </div>
+          <div class="feature-card">
+            <span class="role-tag">Player Mode</span>
+            <strong>Player</strong>
+            <span class="section-subtitle">Compete, practice, and open same-Wi-Fi rooms on your own when you want reps now, not later.</span>
+          </div>
+          <div class="feature-card">
+            <span class="role-tag">Coach Mode</span>
+            <strong>Coach</strong>
+            <span class="section-subtitle">Run the room, control pacing, and keep everyone synchronized without losing the sleek public-facing shell.</span>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="mock-shot">
+            <div class="mock-topbar"></div>
+            <div class="mock-grid">
+              <div class="mock-card">
+                <strong>Home</strong>
+                <div class="mock-line short"></div>
+                <div class="mock-line long"></div>
+              </div>
+              <div class="mock-card">
+                <strong>Study</strong>
+                <div class="mock-line short"></div>
+                <div class="mock-line long"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mock-shot">
+            <div class="mock-topbar"></div>
+            <div class="mock-grid">
+              <div class="mock-card">
+                <strong>Quick Host</strong>
+                <div class="mock-line short"></div>
+                <div class="mock-line long"></div>
+              </div>
+              <div class="mock-card">
+                <strong>QR + Join Link</strong>
+                <div class="mock-line short"></div>
+                <div class="mock-line long"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mock-shot">
+            <div class="mock-topbar"></div>
+            <div class="mock-grid">
+              <div class="mock-card">
+                <strong>Profile</strong>
+                <div class="mock-line short"></div>
+                <div class="mock-line long"></div>
+              </div>
+              <div class="mock-card">
+                <strong>Resume Match</strong>
+                <div class="mock-line short"></div>
+                <div class="mock-line long"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel" id="download">
+        <div class="section-header">
+          <div>
+            <h2>Install the stable release</h2>
+            <p class="section-subtitle">Use the main button for the guided OS-specific download flow, or grab a direct release asset if you know exactly what you want.</p>
+          </div>
+          <button class="button-primary" id="open-modal">Open Install Guide</button>
+        </div>
+        <div class="release-grid">
+          <div class="release-card">
+            <strong>Release status</strong>
+            <p class="status-note" id="release-status">Loading the latest stable manifest from GitHub…</p>
+            <div class="pill-row">
+              <span class="pill" id="platform-pill">Platform detecting</span>
+              <span class="pill" id="asset-pill">Asset pending</span>
+            </div>
+          </div>
+          <div class="release-card">
+            <strong>Clean install path</strong>
+            <p class="status-note">Use the guided button for the easiest flow, or use the CLI fallback if you want checksum verification before the installer opens.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section panel" id="cli">
+        <div class="section-header">
+          <div>
+            <h2>CLI fallback</h2>
+            <p class="section-subtitle">If you prefer the terminal, these commands download the official installer script for your OS and verify the published checksum before launching.</p>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="cli-card">
+            <strong>macOS and Linux</strong>
+            <pre id="unix-command">curl -fsSLO https://raw.githubusercontent.com/CXRK2K/trivia-challenge-bowl-distribution/main/install/install.sh
+bash install.sh</pre>
+          </div>
+          <div class="cli-card">
+            <strong>Windows PowerShell</strong>
+            <pre id="windows-command">iwr https://raw.githubusercontent.com/CXRK2K/trivia-challenge-bowl-distribution/main/install/install.ps1 -OutFile install.ps1
+powershell -ExecutionPolicy Bypass -File .\install.ps1</pre>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        Trivia Challenge Bowl is built to feel immediate: install, sign in, and move straight into the room.
+      </footer>
+    </div>
+
+    <dialog id="install-modal">
+      <div class="modal-shell">
+        <div class="modal-header">
+          <div>
+            <div class="eyebrow" id="modal-eyebrow">Platform guide</div>
+            <h2 id="modal-title" style="margin-top: 0.8rem">Install Trivia Challenge Bowl</h2>
+            <p class="modal-copy" id="modal-copy">Loading the best installer for your platform.</p>
+          </div>
+          <button class="close-button" id="close-modal" aria-label="Close install guide">×</button>
+        </div>
+        <div class="grid-2" style="margin-top: 1rem">
+          <div class="release-card">
+            <strong>Recommended flow</strong>
+            <p class="status-note" id="modal-steps">Open the installer, create your account, and start using Trivia Challenge Bowl.</p>
+          </div>
+          <div class="release-card">
+            <strong>Selected asset</strong>
+            <p class="status-note" id="modal-asset">Waiting for stable manifest data.</p>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <a class="button-primary button-link" id="modal-download" href="https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest">Open Latest Release</a>
+          <a class="button-secondary button-link" id="modal-all-assets" href="https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest">See All Assets</a>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      const repo = "CXRK2K/trivia-challenge-bowl-distribution";
+      const manifestUrl = "./stable.json";
+      const releasePage = `https://github.com/${repo}/releases/latest`;
+
+      const platformLabels = {
+        macos: "macOS",
+        windows: "Windows",
+        linux: "Linux",
+        unknown: "your operating system",
+      };
+
+      const platformSteps = {
+        macos: "Download the DMG, open it, move Trivia Challenge Bowl into Applications, then launch it and create or log into your account.",
+        windows: "Download the Windows installer, run it, complete the installer flow, then open Trivia Challenge Bowl and create or log into your account.",
+        linux: "Download the AppImage, make it executable if needed, launch it, then create or log into your account.",
+        unknown: "Open the release page, choose the installer for your operating system, then launch Trivia Challenge Bowl and create or log into your account.",
+      };
+
+      const modal = document.getElementById("install-modal");
+      const primaryDownload = document.getElementById("primary-download");
+      const openModal = document.getElementById("open-modal");
+      const closeModal = document.getElementById("close-modal");
+      const releaseStatus = document.getElementById("release-status");
+      const eyebrow = document.getElementById("eyebrow");
+      const versionPill = document.getElementById("version-pill");
+      const platformPill = document.getElementById("platform-pill");
+      const assetPill = document.getElementById("asset-pill");
+      const releasePill = document.getElementById("release-pill");
+      const modalEyebrow = document.getElementById("modal-eyebrow");
+      const modalTitle = document.getElementById("modal-title");
+      const modalCopy = document.getElementById("modal-copy");
+      const modalSteps = document.getElementById("modal-steps");
+      const modalAsset = document.getElementById("modal-asset");
+      const modalDownload = document.getElementById("modal-download");
+      const modalAllAssets = document.getElementById("modal-all-assets");
+
+      let currentPlatform = "unknown";
+      let currentManifest = null;
+      let currentAsset = null;
+
+      function detectPlatform() {
+        const ua = navigator.userAgent;
+
+        if (/Windows/i.test(ua)) {
+          return "windows";
+        }
+        if (/Mac/i.test(ua)) {
+          return "macos";
+        }
+        if (/Linux/i.test(ua)) {
+          return "linux";
+        }
+
+        return "unknown";
+      }
+
+      function pickAsset(platform, manifest) {
+        if (!manifest || !manifest.assets) {
+          return null;
+        }
+
+        if (platform === "windows") {
+          return manifest.assets.windows?.primary ?? manifest.assets.windows?.fallback ?? null;
+        }
+        if (platform === "macos") {
+          return manifest.assets.macos ?? null;
+        }
+        if (platform === "linux") {
+          return manifest.assets.linux ?? null;
+        }
+
+        return null;
+      }
+
+      function syncButtons() {
+        const label = platformLabels[currentPlatform];
+        eyebrow.textContent = currentPlatform === "unknown" ? "Choose your platform" : `Detected ${label}`;
+        platformPill.textContent = `Platform: ${label}`;
+        modalEyebrow.textContent = currentPlatform === "unknown" ? "Manual selection" : `${label} guide`;
+        modalTitle.textContent = currentPlatform === "unknown" ? "Install Trivia Challenge Bowl" : `Install Trivia Challenge Bowl for ${label}`;
+        modalCopy.textContent = currentAsset
+          ? `We found a stable ${label} asset for you.`
+          : `Open the release page and choose the ${label} build.`;
+        modalSteps.textContent = platformSteps[currentPlatform];
+
+        if (currentAsset?.url) {
+          primaryDownload.textContent = `Download for ${label}`;
+          primaryDownload.onclick = () => modal.showModal();
+          openModal.onclick = () => modal.showModal();
+          modalDownload.href = currentAsset.url;
+          modalDownload.textContent = `Download ${currentAsset.name}`;
+          modalAsset.textContent = `${currentAsset.name}${currentAsset.sha256 ? ` • SHA-256 ${currentAsset.sha256}` : ""}`;
+          assetPill.textContent = currentAsset.name;
+        } else {
+          primaryDownload.textContent = "Open Latest Release";
+          primaryDownload.onclick = () => window.open(releasePage, "_blank", "noopener");
+          openModal.onclick = () => modal.showModal();
+          modalDownload.href = releasePage;
+          modalDownload.textContent = "Open Latest Release";
+          modalAsset.textContent = "No exact asset match found in the stable manifest yet.";
+          assetPill.textContent = "Asset pending";
+        }
+      }
+
+      async function loadManifest() {
+        try {
+          const response = await fetch(manifestUrl, { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`Stable manifest request failed with ${response.status}.`);
+          }
+
+          currentManifest = await response.json();
+          currentAsset = pickAsset(currentPlatform, currentManifest);
+          releaseStatus.textContent = `Stable ${currentManifest.version ?? "release"} is available from GitHub Releases.`;
+          versionPill.textContent = `Version ${currentManifest.version ?? "unknown"}`;
+          releasePill.textContent = `${currentManifest.channel ?? "stable"} channel`;
+          modalAllAssets.href = releasePage;
+          syncButtons();
+        } catch (error) {
+          releaseStatus.textContent = error.message || "Unable to load the stable manifest right now.";
+          versionPill.textContent = "Version unavailable";
+          releasePill.textContent = "Fallback to release page";
+          currentAsset = null;
+          syncButtons();
+        }
+      }
+
+      currentPlatform = detectPlatform();
+      closeModal.addEventListener("click", () => modal.close());
+      modal.addEventListener("click", (event) => {
+        const bounds = modal.getBoundingClientRect();
+        const inside =
+          event.clientX >= bounds.left &&
+          event.clientX <= bounds.right &&
+          event.clientY >= bounds.top &&
+          event.clientY <= bounds.bottom;
+
+        if (!inside) {
+          modal.close();
+        }
+      });
+
+      loadManifest();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+fa1f890a7f33e21131b120b515e658189d0d52fb7d50875063a0bfec1bea7950  Trivia Challenge Bowl_1.0.0_x64-setup.exe
+e6092f379e3920d328ed851d3896062d31ca80325508cd02df5feea12c2cd227  Trivia Challenge Bowl_1.0.0_x64_en-US.msi
+00e88b55f841aba3228c7155d726cb2e18b888d9b02413659d15cee90cf8b289  Trivia Challenge Bowl_1.0.0_aarch64.dmg
+e65e5c264cf29a0b16abef8e586b5e6569b57663ae1dd208516076f9c71d2ed0  Trivia Challenge Bowl_1.0.0_amd64.AppImage

@@ -1,0 +1,1126 @@
+{
+  "generatedAt": "2026-04-21T19:30:45.709Z",
+  "schools": [
+    {
+      "id": "gallaudet-university-model-secondary-school-for-the-deaf",
+      "displayName": "Gallaudet University Model Secondary School for the Deaf",
+      "shortName": "Gallaudet University Model",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    },
+    {
+      "id": "john-hersey-high-school",
+      "displayName": "John Hersey High School",
+      "shortName": "John Hersey High",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    },
+    {
+      "id": "california-school-for-the-deaf",
+      "displayName": "California School for the Deaf",
+      "shortName": "California School for",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    },
+    {
+      "id": "indiana-school-for-the-deaf",
+      "displayName": "Indiana School for the Deaf",
+      "shortName": "Indiana School for",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    },
+    {
+      "id": "maryland-school-for-the-deaf",
+      "displayName": "Maryland School for the Deaf",
+      "shortName": "Maryland School for",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    },
+    {
+      "id": "texas-school-for-the-deaf",
+      "displayName": "Texas School for the Deaf",
+      "shortName": "Texas School for",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    },
+    {
+      "id": "florida-school-for-the-deaf-and-the-blind",
+      "displayName": "Florida School for the Deaf and the Blind",
+      "shortName": "Florida School for",
+      "region": "National",
+      "state": "USA",
+      "selectable": true
+    }
+  ],
+  "announcements": [
+    {
+      "id": "welcome-stable",
+      "title": "Welcome to Trivia Challenge Bowl",
+      "body": "Players, coaches, and fans can create an account and begin right away.",
+      "tone": "highlight"
+    }
+  ],
+  "matchPresets": [
+    {
+      "id": "12-12-10",
+      "name": "12-12-10 Classic",
+      "description": "The default no-fuss quick-host format.",
+      "format": "12-12-10",
+      "quickHost": true
+    },
+    {
+      "id": "16-16-10",
+      "name": "16-16-10 Extended",
+      "description": "An alternate match format for coaches and advanced players.",
+      "format": "16-16-10",
+      "quickHost": false
+    },
+    {
+      "id": "20-20-15",
+      "name": "20-20-15 Marathon",
+      "description": "An alternate match format for coaches and advanced players.",
+      "format": "20-20-15",
+      "quickHost": false
+    },
+    {
+      "id": "1v1",
+      "name": "1v1 Duel",
+      "description": "An alternate match format for coaches and advanced players.",
+      "format": "1v1",
+      "quickHost": false
+    }
+  ],
+  "studyPacks": [
+    {
+      "id": "public-core",
+      "name": "Public Core Pack",
+      "description": "Published starter material for public study and quick play.",
+      "publishedAt": "2026-04-21T19:30:45.709Z",
+      "questionCount": 50
+    }
+  ],
+  "questions": [
+    {
+      "id": "q_george",
+      "category": "social_studies",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "After leading the Continental Army to victory in the American Revolution, this Virginian became the first president of the United States in 1789. He warned against permanent foreign alliances in his Farewell Address. Name this first U.S. president.",
+      "answer": "George Washington",
+      "acceptedAnswers": [
+        "george washington",
+        "washington"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": true,
+      "bonusQuestion": "This river crossing in December 1776 led to a surprise American victory at Trenton. Name this river crossed by Washington and his troops.",
+      "bonusAnswer": "Delaware River",
+      "bonusAcceptedAnswers": [
+        "delaware river"
+      ],
+      "tags": [
+        "presidents",
+        "american revolution"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_grapes",
+      "category": "language_literature",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "Published in 1939, this John Steinbeck novel follows the Joad family as they travel from Oklahoma to California during the Dust Bowl. It won the National Book Award and Pulitzer Prize. Name this novel.",
+      "answer": "The Grapes of Wrath",
+      "acceptedAnswers": [
+        "the grapes of wrath",
+        "grapes of wrath"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "steinbeck",
+        "dust bowl"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_sesame",
+      "category": "pop_culture_sports",
+      "difficulty": 1,
+      "roundType": "individual",
+      "questionText": "Debuting in 1969, this educational children's television series is set on an urban street populated by Big Bird, Oscar the Grouch, and Cookie Monster. Name this long-running program.",
+      "answer": "Sesame Street",
+      "acceptedAnswers": [
+        "sesame street"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "choices": {
+        "A": "Mister Rogers' Neighborhood",
+        "B": "Reading Rainbow",
+        "C": "Sesame Street",
+        "D": "The Electric Company"
+      },
+      "tags": [
+        "television"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_cuckoo",
+      "category": "arts_entertainment",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "This 1975 film won the Academy Award for Best Picture and stars Jack Nicholson as Randle McMurphy, a patient who rebels against Nurse Ratched in a psychiatric hospital. Name this adaptation of a Ken Kesey novel.",
+      "answer": "One Flew Over the Cuckoo's Nest",
+      "acceptedAnswers": [
+        "one flew over the cuckoo's nest",
+        "cuckoo's nest"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "film",
+        "academy awards"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_modelt",
+      "category": "science_technology",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Introduced by Ford Motor Company in 1908, this automobile became famous for assembly-line production and widespread affordability. Name this pioneering car, commonly nicknamed the Tin Lizzie.",
+      "answer": "Model T",
+      "acceptedAnswers": [
+        "model t"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "transportation",
+        "industrialization"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_seuss",
+      "category": "language_literature",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "This children's author created The Cat in the Hat, Horton Hears a Who!, and Green Eggs and Ham. His real name was Theodor Geisel. Name this writer known by a two-word pen name.",
+      "answer": "Dr. Seuss",
+      "acceptedAnswers": [
+        "dr. seuss"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "children's literature"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_math5digit",
+      "category": "mathematics",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Multiply 53 by 200. What is the product?",
+      "answer": "10,600",
+      "acceptedAnswers": [
+        "10,600"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "arithmetic"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_math4digit",
+      "category": "mathematics",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Add 750 and 750. What is the sum?",
+      "answer": "1500",
+      "acceptedAnswers": [
+        "1500"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "arithmetic"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_currency",
+      "category": "mathematics",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "A ticket costs 42 dollars. Write that amount using the correct currency symbol.",
+      "answer": "$42",
+      "acceptedAnswers": [
+        "$42"
+      ],
+      "answerValidationTags": [
+        "math",
+        "currency"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "currency"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_fraction",
+      "category": "mathematics",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "Write the fraction that represents one part out of two equal parts. Give your answer in lowest terms.",
+      "answer": "1/2",
+      "acceptedAnswers": [
+        "1/2"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "fractions"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_amendment",
+      "category": "social_studies",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "Ratified in 1865, this amendment abolished slavery throughout the United States. Identify this amendment by its Roman numeral designation.",
+      "answer": "XIII",
+      "acceptedAnswers": [
+        "xiii"
+      ],
+      "answerValidationTags": [
+        "amendment"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "constitution",
+        "reconstruction"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_nato",
+      "category": "current_events",
+      "difficulty": 1,
+      "roundType": "individual",
+      "questionText": "Founded in 1949, this military alliance includes the United States, Canada, and many European nations. Its name is often abbreviated by a four-letter acronym. Name this alliance.",
+      "answer": "NATO",
+      "acceptedAnswers": [
+        "nato"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "choices": {
+        "A": "NAFTA",
+        "B": "NATO",
+        "C": "OPEC",
+        "D": "UNESCO"
+      },
+      "tags": [
+        "international relations"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.708Z"
+    },
+    {
+      "id": "q_caravaggio",
+      "category": "arts_entertainment",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "This Italian Baroque painter used dramatic chiaroscuro to heighten emotional intensity. His works include The Calling of Saint Matthew and Judith Beheading Holofernes. Name this artist born Michelangelo Merisi.",
+      "answer": "Caravaggio",
+      "acceptedAnswers": [
+        "caravaggio"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "painting",
+        "baroque"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_guernica",
+      "category": "arts_entertainment",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "Painted in response to the bombing of a Basque town during the Spanish Civil War, this monumental work by Pablo Picasso is rendered largely in black, white, and gray. Name this anti-war painting.",
+      "answer": "Guernica",
+      "acceptedAnswers": [
+        "guernica"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "picasso",
+        "painting"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_starry_night",
+      "category": "arts_entertainment",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "This Vincent van Gogh painting depicts a night sky of swirling stars above a quiet village and a dark cypress tree. It was painted while the artist was at Saint-Remy. Name this work.",
+      "answer": "The Starry Night",
+      "acceptedAnswers": [
+        "the starry night",
+        "starry night"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "van gogh",
+        "painting"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_moonlight_sonata",
+      "category": "arts_entertainment",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "This piano sonata by Ludwig van Beethoven is officially Sonata No. 14 in C-sharp minor, but it is far better known by a nickname inspired by its calm opening movement. Name this sonata.",
+      "answer": "Moonlight Sonata",
+      "acceptedAnswers": [
+        "moonlight sonata"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "beethoven",
+        "music"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pun",
+      "category": "language_literature",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "This figure of speech uses a word or phrase with more than one meaning, often for humorous or rhetorical effect. Shakespeare employs it in Romeo and Juliet when Mercutio says he will be found 'a grave man.' Name this device.",
+      "answer": "Pun",
+      "acceptedAnswers": [
+        "pun"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "rhetoric",
+        "literary devices"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_allusion",
+      "category": "language_literature",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "This literary device occurs when a writer makes an indirect reference to another text, person, event, or work of art. Biblical and classical references are common examples of it. Name this device.",
+      "answer": "Allusion",
+      "acceptedAnswers": [
+        "allusion"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "rhetoric",
+        "literary devices"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_hamlet",
+      "category": "language_literature",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "This Shakespeare tragedy follows the Prince of Denmark as he seeks revenge for his father's murder by Claudius. Its most famous soliloquy begins, 'To be, or not to be.' Name this play.",
+      "answer": "Hamlet",
+      "acceptedAnswers": [
+        "hamlet"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "shakespeare"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_great_expectations",
+      "category": "language_literature",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "In this Charles Dickens novel, the orphan Pip receives mysterious financial help and believes Miss Havisham intends him for Estella. Name this Victorian novel.",
+      "answer": "Great Expectations",
+      "acceptedAnswers": [
+        "great expectations"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "dickens",
+        "novels"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_triangle_13",
+      "category": "mathematics",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "A right triangle has legs measuring 5 centimeters and 12 centimeters. Using the Pythagorean theorem, find the length of the hypotenuse in centimeters.",
+      "answer": "13",
+      "acceptedAnswers": [
+        "13"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "geometry"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pentagon_540",
+      "category": "mathematics",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "Find the sum of the interior angles of a pentagon in degrees.",
+      "answer": "540",
+      "acceptedAnswers": [
+        "540"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "geometry"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_linear_4",
+      "category": "mathematics",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Solve this equation for x: 3x + 5 = 17. Find x.",
+      "answer": "4",
+      "acceptedAnswers": [
+        "4"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "algebra"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_median_5",
+      "category": "mathematics",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Find the median of this data set: 2, 5, and 9.",
+      "answer": "5",
+      "acceptedAnswers": [
+        "5"
+      ],
+      "answerValidationTags": [
+        "math"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "statistics"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_phelps",
+      "category": "pop_culture_sports",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "This American swimmer became the most decorated Olympian of all time, winning 23 gold medals across five Olympic Games. He specialized in butterfly and medley events. Name this athlete.",
+      "answer": "Michael Phelps",
+      "acceptedAnswers": [
+        "michael phelps",
+        "phelps"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "olympics",
+        "swimming"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_gretzky",
+      "category": "pop_culture_sports",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Known as 'The Great One,' this hockey player holds NHL career records for goals, assists, and total points. Name this Edmonton Oilers legend.",
+      "answer": "Wayne Gretzky",
+      "acceptedAnswers": [
+        "wayne gretzky",
+        "gretzky"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "hockey"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_jackie_robinson",
+      "category": "pop_culture_sports",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "In 1947, this Brooklyn Dodgers infielder broke Major League Baseball's modern color barrier. He later had his number 42 retired across all MLB teams. Name this player.",
+      "answer": "Jackie Robinson",
+      "acceptedAnswers": [
+        "jackie robinson",
+        "robinson"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "baseball"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_marlee_matlin",
+      "category": "pop_culture_sports",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "In 1986, this Deaf actress won the Academy Award for Best Actress for Children of a Lesser God. She later appeared on television in Reasonable Doubts and other series. Name this actress.",
+      "answer": "Marlee Matlin",
+      "acceptedAnswers": [
+        "marlee matlin",
+        "matlin"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "film",
+        "deaf heritage"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_neutron",
+      "category": "science_technology",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Discovered by James Chadwick in 1932, this subatomic particle has approximately the same mass as a proton but carries no electric charge. Name this particle.",
+      "answer": "Neutron",
+      "acceptedAnswers": [
+        "neutron"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "physics"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_mitochondrion",
+      "category": "science_technology",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "This organelle is often called the powerhouse of the cell because it produces most cellular ATP through respiration. Name this organelle.",
+      "answer": "Mitochondrion",
+      "acceptedAnswers": [
+        "mitochondrion",
+        "mitochondria"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "biology",
+        "organelles"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_photosynthesis",
+      "category": "science_technology",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "In this biological process, plants use light energy to convert carbon dioxide and water into glucose and oxygen. Name this process.",
+      "answer": "Photosynthesis",
+      "acceptedAnswers": [
+        "photosynthesis"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "biology"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_mendel",
+      "category": "science_technology",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "By experimenting with pea plants, this Austrian monk established foundational laws of heredity such as segregation and independent assortment. Name this scientist.",
+      "answer": "Gregor Mendel",
+      "acceptedAnswers": [
+        "gregor mendel",
+        "mendel"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "genetics"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_magna_carta",
+      "category": "social_studies",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "Sealed in 1215 under King John of England, this charter limited royal power and became an important foundation for later constitutional government. Name this document.",
+      "answer": "Magna Carta",
+      "acceptedAnswers": [
+        "magna carta"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "british history",
+        "law"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_marshall_plan",
+      "category": "social_studies",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "After World War II, the United States used this recovery program to provide economic aid to Western Europe and counter Soviet influence. Name this plan, officially the European Recovery Program.",
+      "answer": "Marshall Plan",
+      "acceptedAnswers": [
+        "marshall plan",
+        "the marshall plan"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "cold war"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_catherine_great",
+      "category": "social_studies",
+      "difficulty": 2,
+      "roundType": "team_discussion",
+      "questionText": "This Russian empress ruled from 1762 to 1796 after deposing her husband Peter III. She expanded Russian territory and is commonly remembered by a grand epithet. Name this ruler.",
+      "answer": "Catherine the Great",
+      "acceptedAnswers": [
+        "catherine the great",
+        "catherine ii"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "russia",
+        "monarchs"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_declaration_independence",
+      "category": "social_studies",
+      "difficulty": 1,
+      "roundType": "team_discussion",
+      "questionText": "Adopted on July 4, 1776, this American document announced that the thirteen colonies were free and independent states. Thomas Jefferson was its principal author. Name this document.",
+      "answer": "Declaration of Independence",
+      "acceptedAnswers": [
+        "declaration of independence",
+        "the declaration of independence"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "american revolution"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_who_accord",
+      "category": "current_events",
+      "difficulty": 2,
+      "roundType": "individual",
+      "questionText": "In 2024, member states continued negotiating a global pandemic accord under this Geneva-based health agency. Name this United Nations specialized agency, commonly abbreviated by three letters.",
+      "answer": "WHO",
+      "acceptedAnswers": [
+        "who",
+        "world health organization"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "choices": {
+        "A": "WHO",
+        "B": "UNESCO",
+        "C": "NATO",
+        "D": "OPEC"
+      },
+      "tags": [
+        "international organizations"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_nasa_artemis",
+      "category": "current_events",
+      "difficulty": 1,
+      "roundType": "individual",
+      "questionText": "In 2025, this United States agency continued preparations for the Artemis II mission, which is expected to send astronauts around the Moon. Name this agency.",
+      "answer": "NASA",
+      "acceptedAnswers": [
+        "nasa",
+        "national aeronautics and space administration"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "choices": {
+        "A": "NOAA",
+        "B": "NASA",
+        "C": "ESA",
+        "D": "ISRO"
+      },
+      "tags": [
+        "space"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_icc_warrants",
+      "category": "current_events",
+      "difficulty": 2,
+      "roundType": "individual",
+      "questionText": "In 2024, prosecutors at this Hague-based court sought arrest warrants connected to the Israel-Hamas war. Name this permanent court that tries individuals for war crimes and crimes against humanity.",
+      "answer": "International Criminal Court",
+      "acceptedAnswers": [
+        "international criminal court",
+        "icc"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "choices": {
+        "A": "International Court of Justice",
+        "B": "European Court of Human Rights",
+        "C": "International Criminal Court",
+        "D": "Permanent Court of Arbitration"
+      },
+      "tags": [
+        "international law"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_cop29",
+      "category": "current_events",
+      "difficulty": 1,
+      "roundType": "individual",
+      "questionText": "In November 2024, world leaders met in Baku for this United Nations climate conference. Name this conference by its common abbreviated title.",
+      "answer": "COP29",
+      "acceptedAnswers": [
+        "cop29",
+        "cop 29"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "choices": {
+        "A": "G20",
+        "B": "COP29",
+        "C": "ASEAN",
+        "D": "APEC"
+      },
+      "tags": [
+        "climate"
+      ],
+      "source": "original",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_deaf_heritage",
+      "category": "potpourri",
+      "difficulty": 1,
+      "roundType": "potpourri",
+      "questionText": "Published in 1981 by Jack Gannon, this book became a classic survey of Deaf history and culture. Name this book, which supplied the answers to an entire mini-quiz in Grindrod's study guide.",
+      "answer": "Deaf Heritage",
+      "acceptedAnswers": [
+        "deaf heritage"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "books"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_deleppe",
+      "category": "potpourri",
+      "difficulty": 2,
+      "roundType": "potpourri",
+      "questionText": "Born in Versailles, this French priest established the first free public school for the Deaf in 1771 and advocated the use of natural signs. Name this 'father of Sign Language and Deaf Education.'",
+      "answer": "Charles-Michel de l'Epee",
+      "acceptedAnswers": [
+        "charles-michel de l'epee",
+        "de l'epee",
+        "abbe de l'epee"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "education"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_clerc",
+      "category": "potpourri",
+      "difficulty": 2,
+      "roundType": "potpourri",
+      "questionText": "This Deaf teacher from France moved to Hartford in 1816 and co-founded the American School for the Deaf with Thomas Hopkins Gallaudet. Name this educator.",
+      "answer": "Laurent Clerc",
+      "acceptedAnswers": [
+        "laurent clerc",
+        "clerc"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "education"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_asd",
+      "category": "potpourri",
+      "difficulty": 1,
+      "roundType": "potpourri",
+      "questionText": "Founded in Hartford, Connecticut in 1817, this institution was the first American school for Deaf students. Name this school.",
+      "answer": "American School for the Deaf",
+      "acceptedAnswers": [
+        "american school for the deaf"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "education"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_cogswell",
+      "category": "potpourri",
+      "difficulty": 2,
+      "roundType": "potpourri",
+      "questionText": "The first graduate of the American School for the Deaf was this girl whose education inspired Thomas Hopkins Gallaudet to pursue Deaf education. Name her.",
+      "answer": "Alice Cogswell",
+      "acceptedAnswers": [
+        "alice cogswell",
+        "cogswell"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "education"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_hoy",
+      "category": "potpourri",
+      "difficulty": 1,
+      "roundType": "potpourri",
+      "questionText": "According to Grindrod's Deaf Time-Line, this baseball player inspired umpires to adopt hand signals for calls such as out, safe, and strike. Name this player, whose nickname was 'Dummy.'",
+      "answer": "William Hoy",
+      "acceptedAnswers": [
+        "william hoy",
+        "dummy hoy",
+        "hoy"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "sports"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_mssd",
+      "category": "potpourri",
+      "difficulty": 1,
+      "roundType": "potpourri",
+      "questionText": "Established in 1966 on the campus of Gallaudet University, this secondary school is commonly abbreviated MSSD. Give the full name of this school.",
+      "answer": "Model Secondary School for the Deaf",
+      "acceptedAnswers": [
+        "model secondary school for the deaf"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "schools"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_dpn",
+      "category": "potpourri",
+      "difficulty": 2,
+      "roundType": "potpourri",
+      "questionText": "The 1988 Deaf President Now protest at Gallaudet University ended with the selection of this man as the university's first Deaf president. Name him.",
+      "answer": "I. King Jordan",
+      "acceptedAnswers": [
+        "i. king jordan",
+        "iking jordan",
+        "i king jordan",
+        "jordan"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "gallaudet"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_veditz",
+      "category": "potpourri",
+      "difficulty": 2,
+      "roundType": "potpourri",
+      "questionText": "This former NAD president declared in 1913, 'As long as we have deaf people on earth, we will have signs.' Name this advocate who raised money to film signed language on the new medium of motion picture film.",
+      "answer": "George W. Veditz",
+      "acceptedAnswers": [
+        "george w. veditz",
+        "george veditz",
+        "veditz"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "advocacy"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    },
+    {
+      "id": "q_pot_andrew_foster",
+      "category": "potpourri",
+      "difficulty": 2,
+      "roundType": "potpourri",
+      "questionText": "Known as the Father of Deaf African Education, this man founded 31 schools for Deaf students across Africa and was the first Black Deaf graduate of Gallaudet College. Name him.",
+      "answer": "Andrew Foster",
+      "acceptedAnswers": [
+        "andrew foster",
+        "foster"
+      ],
+      "answerValidationTags": [],
+      "hasBonus": false,
+      "tags": [
+        "deaf heritage",
+        "education"
+      ],
+      "source": "grindrod study guide",
+      "dateAdded": "2026-04-21T19:30:45.707Z"
+    }
+  ]
+}
