@@ -17,6 +17,8 @@ The source code stays private in the main `trivia-challenge-bowl` repository. In
 - Preferred: use the GitHub Pages install surface at [cxrk2k.github.io/trivia-challenge-bowl-distribution](https://cxrk2k.github.io/trivia-challenge-bowl-distribution/)
 - Fallback: open the latest public release directly at [GitHub Releases](https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest)
 
+The current stable public binaries in this repository are the freshly rebuilt Windows installers for Trivia Challenge Bowl. macOS and Linux assets are intentionally withheld here until fresh renamed builds are published from the Trivia Challenge Bowl source repo.
+
 ## CLI Fallback
 
 ### macOS and Linux

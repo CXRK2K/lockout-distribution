@@ -971,7 +971,7 @@ powershell -ExecutionPolicy Bypass -File .\install.ps1</pre>
         modalTitle.textContent = currentPlatform === "unknown" ? "Install Trivia Challenge Bowl" : `Install Trivia Challenge Bowl for ${label}`;
         modalCopy.textContent = currentAsset
           ? `We found a stable ${label} asset for you.`
-          : `Open the release page and choose the ${label} build.`;
+          : `No stable ${label} asset is published in the manifest yet. Check the release page for newer builds.`;
         modalSteps.textContent = platformSteps[currentPlatform];
 
         if (currentAsset?.url) {

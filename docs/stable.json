@@ -3,27 +3,17 @@
   "channel": "stable",
   "version": "1.0.0",
   "assets": {
-    "macos": {
-      "name": "Trivia Challenge Bowl_1.0.0_aarch64.dmg",
-      "url": "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/raw/main/Trivia Challenge Bowl_1.0.0_aarch64.dmg",
-      "sha256": "00e88b55f841aba3228c7155d726cb2e18b888d9b02413659d15cee90cf8b289"
-    },
     "windows": {
       "primary": {
         "name": "Trivia Challenge Bowl_1.0.0_x64-setup.exe",
         "url": "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/raw/main/Trivia Challenge Bowl_1.0.0_x64-setup.exe",
-        "sha256": "fa1f890a7f33e21131b120b515e658189d0d52fb7d50875063a0bfec1bea7950"
+        "sha256": "66f84ec5d14dae7a1fe30d0e6e15374582b61d4245d066bb235ff121b7d70c86"
       },
       "fallback": {
         "name": "Trivia Challenge Bowl_1.0.0_x64_en-US.msi",
         "url": "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/raw/main/Trivia Challenge Bowl_1.0.0_x64_en-US.msi",
-        "sha256": "e6092f379e3920d328ed851d3896062d31ca80325508cd02df5feea12c2cd227"
+        "sha256": "17ecc5b2c0752b4a18268abe3680746cfa0c9be8a3a24423e3de84b0b24c8bc7"
       }
-    },
-    "linux": {
-      "name": "Trivia Challenge Bowl_1.0.0_amd64.AppImage",
-      "url": "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/raw/main/Trivia Challenge Bowl_1.0.0_amd64.AppImage",
-      "sha256": "e65e5c264cf29a0b16abef8e586b5e6569b57663ae1dd208516076f9c71d2ed0"
     }
   }
 }
