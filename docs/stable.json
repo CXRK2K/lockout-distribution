@@ -1,17 +1,17 @@
 {
-  "name": "Trivia Challenge Bowl",
+  "name": "LOCKOUT!",
   "channel": "stable",
   "version": "1.0.0",
   "assets": {
     "windows": {
       "primary": {
-        "name": "Trivia Challenge Bowl_1.0.0_x64-setup.exe",
-        "url": "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/raw/main/Trivia Challenge Bowl_1.0.0_x64-setup.exe",
+        "name": "LOCKOUT_1.0.0_x64-setup.exe",
+        "url": "https://github.com/CXRK2K/lockout-distribution/raw/main/LOCKOUT_1.0.0_x64-setup.exe",
         "sha256": "66f84ec5d14dae7a1fe30d0e6e15374582b61d4245d066bb235ff121b7d70c86"
       },
       "fallback": {
-        "name": "Trivia Challenge Bowl_1.0.0_x64_en-US.msi",
-        "url": "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/raw/main/Trivia Challenge Bowl_1.0.0_x64_en-US.msi",
+        "name": "LOCKOUT_1.0.0_x64_en-US.msi",
+        "url": "https://github.com/CXRK2K/lockout-distribution/raw/main/LOCKOUT_1.0.0_x64_en-US.msi",
         "sha256": "17ecc5b2c0752b4a18268abe3680746cfa0c9be8a3a24423e3de84b0b24c8bc7"
       }
     }

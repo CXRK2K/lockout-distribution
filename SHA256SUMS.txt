@@ -1,2 +1,2 @@
-66f84ec5d14dae7a1fe30d0e6e15374582b61d4245d066bb235ff121b7d70c86  Trivia Challenge Bowl_1.0.0_x64-setup.exe
-17ecc5b2c0752b4a18268abe3680746cfa0c9be8a3a24423e3de84b0b24c8bc7  Trivia Challenge Bowl_1.0.0_x64_en-US.msi
+66f84ec5d14dae7a1fe30d0e6e15374582b61d4245d066bb235ff121b7d70c86  LOCKOUT_1.0.0_x64-setup.exe
+17ecc5b2c0752b4a18268abe3680746cfa0c9be8a3a24423e3de84b0b24c8bc7  LOCKOUT_1.0.0_x64_en-US.msi

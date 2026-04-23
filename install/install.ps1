@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$repo = "CXRK2K/trivia-challenge-bowl-distribution"
+$repo = "CXRK2K/lockout-distribution"
 # The stable manifest decides which Windows installer is current and which
 # checksum it must match before PowerShell starts it.
 $manifest = Invoke-RestMethod -Uri "https://raw.githubusercontent.com/$repo/main/docs/stable.json"
@@ -11,7 +11,7 @@ if (-not $asset) {
 }
 
 if (-not $asset) {
-  throw "No Windows installer asset was found in the Trivia Challenge Bowl stable manifest."
+  throw "No Windows installer asset was found in the LOCKOUT! stable manifest."
 }
 
 $target = Join-Path $env:TEMP $asset.name

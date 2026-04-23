@@ -1,6 +1,6 @@
-# Trivia Challenge Bowl Distribution
+# LOCKOUT! Distribution
 
-This public repository is the stable installer and download surface for **Trivia Challenge Bowl**.
+This public repository is the stable installer and download surface for **LOCKOUT!**.
 
 ## What This Repo Is For
 
@@ -10,28 +10,30 @@ This public repository is the stable installer and download surface for **Trivia
 - public release notes and download instructions
 - public desktop installers published through GitHub Releases
 
-The source code stays private in the main `trivia-challenge-bowl` repository. Internal owner builds are never exposed here.
+The source code stays private in the main `lockout-core` repository. Internal owner builds are never exposed here.
 
 ## Install
 
-- Preferred: use the GitHub Pages install surface at [cxrk2k.github.io/trivia-challenge-bowl-distribution](https://cxrk2k.github.io/trivia-challenge-bowl-distribution/)
-- Fallback: open the latest public release directly at [GitHub Releases](https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest)
+- Preferred: use the GitHub Pages install surface at [cxrk2k.github.io/lockout-distribution](https://cxrk2k.github.io/lockout-distribution/)
+- Fallback: open the latest public release directly at [GitHub Releases](https://github.com/CXRK2K/lockout-distribution/releases/latest)
 
-The current stable public binaries in this repository are the freshly rebuilt Windows installers for Trivia Challenge Bowl. macOS and Linux assets are intentionally withheld here until fresh renamed builds are published from the Trivia Challenge Bowl source repo.
+The current stable public binaries in this repository are the freshly rebuilt Windows installers for LOCKOUT!
+
+macOS and Linux assets are intentionally withheld here until fresh renamed builds are published from the LOCKOUT! source repo.
 
 ## CLI Fallback
 
 ### macOS and Linux
 
 ```bash
-curl -fsSLO https://raw.githubusercontent.com/CXRK2K/trivia-challenge-bowl-distribution/main/install/install.sh
+curl -fsSLO https://raw.githubusercontent.com/CXRK2K/lockout-distribution/main/install/install.sh
 bash install.sh
 ```
 
 ### Windows PowerShell
 
 ```powershell
-iwr https://raw.githubusercontent.com/CXRK2K/trivia-challenge-bowl-distribution/main/install/install.ps1 -OutFile install.ps1
+iwr https://raw.githubusercontent.com/CXRK2K/lockout-distribution/main/install/install.ps1 -OutFile install.ps1
 powershell -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
@@ -49,6 +51,6 @@ The install scripts verify the published SHA-256 before launching the native ins
 
 - Only public fan/player/coach installers belong here.
 - Do not place owner builds, internal environment files, private databases, or private release notes in this repository.
-- Treat any Trivia Challenge Bowl installer hosted outside the official GitHub repositories as untrusted.
+- Treat any LOCKOUT! installer hosted outside the official GitHub repositories as untrusted.
 
 See [SECURITY.md](./SECURITY.md) for the full public distribution boundary.

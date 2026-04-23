@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-REPO="CXRK2K/trivia-challenge-bowl-distribution"
+REPO="CXRK2K/lockout-distribution"
 MANIFEST_URL="https://raw.githubusercontent.com/${REPO}/main/docs/stable.json"
 OS_NAME="$(uname -s)"
 TMP_DIR="$(mktemp -d)"
@@ -15,12 +15,12 @@ cleanup() {
 trap cleanup EXIT
 
 if ! command -v curl >/dev/null 2>&1; then
-  echo "curl is required to install Trivia Challenge Bowl." >&2
+  echo "curl is required to install the LOCKOUT! app." >&2
   exit 1
 fi
 
 if ! command -v python3 >/dev/null 2>&1; then
-  echo "python3 is required to parse the Trivia Challenge Bowl stable manifest." >&2
+  echo "python3 is required to parse the LOCKOUT! stable manifest." >&2
   exit 1
 fi
 
@@ -72,7 +72,7 @@ PY
 )"
 
 if [[ -z "${asset_info}" ]]; then
-  echo "No stable Trivia Challenge Bowl installer is published for ${OS_NAME} yet." >&2
+  echo "No stable LOCKOUT! installer is published for ${OS_NAME} yet." >&2
   exit 1
 fi
 

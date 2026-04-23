@@ -149,7 +149,7 @@ function syncInstallExperience(platform, manifest) {
   setText("[data-release-channel]", `${manifest?.channel ?? "stable"} channel`);
 
   const downloadButtons = document.querySelectorAll("[data-download-button]");
-  const releaseHref = "https://github.com/CXRK2K/trivia-challenge-bowl-distribution/releases/latest";
+  const releaseHref = "https://github.com/CXRK2K/lockout-distribution/releases/latest";
 
   if (asset?.url) {
     setText("[data-install-title]", `Download ${asset.name}`);

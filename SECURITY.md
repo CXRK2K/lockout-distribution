@@ -1,6 +1,6 @@
 # Security Notes
 
-This repository is the **public** installer and release surface for Trivia Challenge Bowl.
+This repository is the **public** installer and release surface for LOCKOUT!.
 
 ## What Belongs Here
 
@@ -22,7 +22,7 @@ This repository is the **public** installer and release surface for Trivia Chall
 ## Release Boundary
 
 - Public fan, player, and coach installers may be published here.
-- Internal owner builds must stay in the private `trivia-challenge-bowl` release path only.
+- Internal owner builds must stay in the private `lockout-core` release path only.
 - Public manifests must never point at internal assets.
 - Public site copy must never mention internal release URLs, internal repo names, or private operations tooling.
 
@@ -30,7 +30,7 @@ This repository is the **public** installer and release surface for Trivia Chall
 
 - Prefer the official GitHub Pages install page, the published GitHub Release assets, or the verified install scripts.
 - Verify downloaded binaries against `SHA256SUMS.txt` when downloading manually.
-- Treat any Trivia Challenge Bowl installer hosted outside the official GitHub repositories as untrusted.
+- Treat any LOCKOUT! installer hosted outside the official GitHub repositories as untrusted.
 
 ## Reporting
 
