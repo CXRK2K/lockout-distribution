@@ -1,37 +1,42 @@
 {
   "title": "Three-Match Solo CPU Trial",
-  "description": "A limited browser trial with exactly three free solo-vs-CPU matches. Each match has its own non-overlapping question set.",
+  "description": "A limited browser trial with exactly three free solo-vs-CPU matches built from the easy-access shared LOCKOUT! trial bank.",
   "matchesAllowed": 3,
   "defaultQuestionTimerSeconds": 20,
   "matches": [
     {
       "id": "opening-lockout",
       "title": "Opening Lockout",
-      "cpuName": "Redline Rival",
-      "cpuStyle": "Quick out of the gate, softer on arts.",
-      "description": "A broad warm-up showdown that teaches the trial flow without giving away the full product.",
+      "cpuName": "House Red",
+      "cpuStyle": "Fast start, messy finish.",
+      "description": "An easy first match built to get casual players rolling without homework vibes.",
       "questionTimerSeconds": 20,
       "perfectScore": 50,
       "questions": [
         {
-          "id": "trial_1_george",
+          "id": "trial_opening-lockout_1_q_george",
           "category": "social_studies",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "After leading the Continental Army to victory in the American Revolution, this Virginian became the first president of the United States in 1789. He warned against permanent foreign alliances in his Farewell Address. Name this first U.S. president.",
+          "questionText": "He was the first president of the United States, and his face is on the one-dollar bill. Name him.",
           "answer": "George Washington",
-          "acceptedAnswers": ["george washington", "washington"],
+          "acceptedAnswers": [
+            "george washington",
+            "washington"
+          ],
           "points": 10,
           "cpuCorrect": true
         },
         {
-          "id": "trial_1_sesame",
+          "id": "trial_opening-lockout_2_q_sesame",
           "category": "pop_culture_sports",
           "difficulty": 1,
           "roundType": "individual",
-          "questionText": "Debuting in 1969, this educational children's television series is set on an urban street populated by Big Bird, Oscar the Grouch, and Cookie Monster. Name this long-running program.",
+          "questionText": "Big Bird, Cookie Monster, and Oscar the Grouch all appear on this long-running kids TV show. Name it.",
           "answer": "Sesame Street",
-          "acceptedAnswers": ["sesame street"],
+          "acceptedAnswers": [
+            "sesame street"
+          ],
           "choices": {
             "A": "Mister Rogers' Neighborhood",
             "B": "Reading Rainbow",
@@ -42,35 +47,42 @@
           "cpuCorrect": true
         },
         {
-          "id": "trial_1_modelt",
+          "id": "trial_opening-lockout_3_q_modelt",
           "category": "science_technology",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "Introduced by Ford Motor Company in 1908, this automobile became famous for assembly-line production and widespread affordability. Name this pioneering car, commonly nicknamed the Tin Lizzie.",
-          "answer": "Model T",
-          "acceptedAnswers": ["model t"],
+          "questionText": "This planet is known as the Red Planet. Name it.",
+          "answer": "Mars",
+          "acceptedAnswers": [
+            "mars"
+          ],
           "points": 10,
           "cpuCorrect": false
         },
         {
-          "id": "trial_1_math4digit",
+          "id": "trial_opening-lockout_4_q_math4digit",
           "category": "mathematics",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "Add 750 and 750. What is the sum?",
-          "answer": "1500",
-          "acceptedAnswers": ["1500"],
+          "questionText": "What is 25 plus 25?",
+          "answer": "50",
+          "acceptedAnswers": [
+            "50"
+          ],
           "points": 10,
           "cpuCorrect": true
         },
         {
-          "id": "trial_1_starry",
+          "id": "trial_opening-lockout_5_q_starry_night",
           "category": "arts_entertainment",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "This Vincent van Gogh painting depicts a night sky of swirling stars above a quiet village and a dark cypress tree. It was painted while the artist was at Saint-Remy. Name this work.",
+          "questionText": "This famous painting by Vincent van Gogh shows a swirling night sky over a village. Name it.",
           "answer": "The Starry Night",
-          "acceptedAnswers": ["the starry night", "starry night"],
+          "acceptedAnswers": [
+            "the starry night",
+            "starry night"
+          ],
           "points": 10,
           "cpuCorrect": false
         }
@@ -79,70 +91,86 @@
     {
       "id": "night-shift-showdown",
       "title": "Night Shift Showdown",
-      "cpuName": "Switchback Sigma",
-      "cpuStyle": "Tough on current events and science, vulnerable on geometry.",
-      "description": "A sharper second exhibition match with more pressure and a CPU that capitalizes on hesitation.",
+      "cpuName": "Blue Noise",
+      "cpuStyle": "Solid on brands and sports, shaky on anything visual.",
+      "description": "A second match that stays easy but keeps a little edge so wins still feel earned.",
       "questionTimerSeconds": 20,
       "perfectScore": 50,
       "questions": [
         {
-          "id": "trial_2_grapes",
+          "id": "trial_night-shift-showdown_1_q_grapes",
           "category": "language_literature",
-          "difficulty": 2,
+          "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "Published in 1939, this John Steinbeck novel follows the Joad family as they travel from Oklahoma to California during the Dust Bowl. It won the National Book Award and Pulitzer Prize. Name this novel.",
-          "answer": "The Grapes of Wrath",
-          "acceptedAnswers": ["the grapes of wrath", "grapes of wrath"],
+          "questionText": "This author created Harry Potter, Hermione Granger, and Hogwarts. Name her.",
+          "answer": "J.K. Rowling",
+          "acceptedAnswers": [
+            "j.k. rowling",
+            "jk rowling",
+            "joanne rowling"
+          ],
           "points": 10,
           "cpuCorrect": false
         },
         {
-          "id": "trial_2_nato",
+          "id": "trial_night-shift-showdown_2_q_nato",
           "category": "current_events",
           "difficulty": 1,
           "roundType": "individual",
-          "questionText": "Founded in 1949, this military alliance includes the United States, Canada, and many European nations. Its name is often abbreviated by a four-letter acronym. Name this alliance.",
-          "answer": "NATO",
-          "acceptedAnswers": ["nato"],
+          "questionText": "Which company makes the iPhone?",
+          "answer": "Apple",
+          "acceptedAnswers": [
+            "apple",
+            "apple inc."
+          ],
           "choices": {
-            "A": "NAFTA",
-            "B": "NATO",
-            "C": "OPEC",
-            "D": "UNESCO"
+            "A": "Samsung",
+            "B": "Apple",
+            "C": "Sony",
+            "D": "Nintendo"
           },
           "points": 10,
           "cpuCorrect": true
         },
         {
-          "id": "trial_2_triangle",
+          "id": "trial_night-shift-showdown_3_q_triangle_13",
           "category": "mathematics",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "A right triangle has legs measuring 5 centimeters and 12 centimeters. Using the Pythagorean theorem, find the length of the hypotenuse in centimeters.",
-          "answer": "13",
-          "acceptedAnswers": ["13"],
+          "questionText": "How many sides does a triangle have?",
+          "answer": "3",
+          "acceptedAnswers": [
+            "3",
+            "three"
+          ],
           "points": 10,
           "cpuCorrect": false
         },
         {
-          "id": "trial_2_jackie",
+          "id": "trial_night-shift-showdown_4_q_phelps",
           "category": "pop_culture_sports",
-          "difficulty": 2,
+          "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "In 1947, this Brooklyn Dodgers infielder broke Major League Baseball's modern color barrier. He later had his number 42 retired across all MLB teams. Name this player.",
-          "answer": "Jackie Robinson",
-          "acceptedAnswers": ["jackie robinson", "robinson"],
+          "questionText": "This basketball legend won six championships with the Chicago Bulls and wore number 23. Name him.",
+          "answer": "Michael Jordan",
+          "acceptedAnswers": [
+            "michael jordan",
+            "jordan"
+          ],
           "points": 10,
           "cpuCorrect": true
         },
         {
-          "id": "trial_2_mito",
+          "id": "trial_night-shift-showdown_5_q_mitochondrion",
           "category": "science_technology",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "This organelle is often called the powerhouse of the cell because it produces most cellular ATP through respiration. Name this organelle.",
-          "answer": "Mitochondrion",
-          "acceptedAnswers": ["mitochondrion", "mitochondria"],
+          "questionText": "What part of the body pumps blood?",
+          "answer": "Heart",
+          "acceptedAnswers": [
+            "heart",
+            "the heart"
+          ],
           "points": 10,
           "cpuCorrect": true
         }
@@ -151,64 +179,84 @@
     {
       "id": "final-light-gauntlet",
       "title": "Final Light Gauntlet",
-      "cpuName": "Judge Zero",
-      "cpuStyle": "Cold-blooded finisher with a taste for history and science.",
-      "description": "The last free trial match. Win this one and the browser trial has shown everything it is supposed to show.",
+      "cpuName": "Last Call",
+      "cpuStyle": "Keeps the pressure on, but still totally beatable.",
+      "description": "The last free match. Same easy-access tone, just enough tension to sell the rematch.",
       "questionTimerSeconds": 20,
       "perfectScore": 50,
       "questions": [
         {
-          "id": "trial_3_magna",
+          "id": "trial_final-light-gauntlet_1_q_amendment",
           "category": "social_studies",
-          "difficulty": 2,
+          "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "Sealed in 1215 under King John of England, this charter limited royal power and became an important foundation for later constitutional government. Name this document.",
-          "answer": "Magna Carta",
-          "acceptedAnswers": ["magna carta"],
+          "questionText": "What is the name of the building where the U.S. president lives?",
+          "answer": "White House",
+          "acceptedAnswers": [
+            "white house",
+            "the white house"
+          ],
           "points": 10,
           "cpuCorrect": true
         },
         {
-          "id": "trial_3_marlee",
-          "category": "pop_culture_sports",
-          "difficulty": 2,
+          "id": "trial_final-light-gauntlet_2_q_guernica",
+          "category": "arts_entertainment",
+          "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "In 1986, this Deaf actress won the Academy Award for Best Actress for Children of a Lesser God. She later appeared on television in Reasonable Doubts and other series. Name this actress.",
-          "answer": "Marlee Matlin",
-          "acceptedAnswers": ["marlee matlin", "matlin"],
+          "questionText": "Elsa and Anna are sisters in this animated movie. Name it.",
+          "answer": "Frozen",
+          "acceptedAnswers": [
+            "frozen"
+          ],
           "points": 10,
           "cpuCorrect": false
         },
         {
-          "id": "trial_3_dpn",
+          "id": "trial_final-light-gauntlet_3_q_pot_asd",
           "category": "potpourri",
-          "difficulty": 2,
+          "difficulty": 1,
           "roundType": "potpourri",
-          "questionText": "The 1988 Deaf President Now protest at Gallaudet University ended with the selection of this man as the university's first Deaf president. Name him.",
-          "answer": "I. King Jordan",
-          "acceptedAnswers": ["i. king jordan", "iking jordan", "i king jordan", "jordan"],
+          "questionText": "What video game character says It's-a me and wears red overalls?",
+          "answer": "Mario",
+          "acceptedAnswers": [
+            "mario",
+            "super mario"
+          ],
           "points": 10,
           "cpuCorrect": true
         },
         {
-          "id": "trial_3_pun",
+          "id": "trial_final-light-gauntlet_4_q_hamlet",
           "category": "language_literature",
           "difficulty": 1,
           "roundType": "team_discussion",
-          "questionText": "This figure of speech uses a word or phrase with more than one meaning, often for humorous or rhetorical effect. Shakespeare employs it in Romeo and Juliet when Mercutio says he will be found 'a grave man.' Name this device.",
-          "answer": "Pun",
-          "acceptedAnswers": ["pun"],
+          "questionText": "In texting, what does LOL stand for?",
+          "answer": "Laughing Out Loud",
+          "acceptedAnswers": [
+            "laughing out loud",
+            "lol"
+          ],
           "points": 10,
           "cpuCorrect": false
         },
         {
-          "id": "trial_3_neutron",
-          "category": "science_technology",
+          "id": "trial_final-light-gauntlet_5_q_nasa_artemis",
+          "category": "current_events",
           "difficulty": 1,
-          "roundType": "team_discussion",
-          "questionText": "Discovered by James Chadwick in 1932, this subatomic particle has approximately the same mass as a proton but carries no electric charge. Name this particle.",
-          "answer": "Neutron",
-          "acceptedAnswers": ["neutron"],
+          "roundType": "individual",
+          "questionText": "What U.S. space agency is behind the Artemis missions to the Moon?",
+          "answer": "NASA",
+          "acceptedAnswers": [
+            "nasa",
+            "national aeronautics and space administration"
+          ],
+          "choices": {
+            "A": "NOAA",
+            "B": "NASA",
+            "C": "ESA",
+            "D": "ISRO"
+          },
           "points": 10,
           "cpuCorrect": true
         }

@@ -103,13 +103,13 @@ function renderTrialLabel(trial) {
   node.textContent = `${trial.matchesAllowed} free CPU matches`;
 }
 
-function renderSchoolTrack(bootstrap) {
-  const track = document.querySelector("[data-school-track]");
-  if (!track || !bootstrap?.schools?.length) {
+function renderCategoryTrack(bootstrap) {
+  const track = document.querySelector("[data-category-track]");
+  if (!track || !bootstrap?.questions?.length) {
     return;
   }
 
-  const names = bootstrap.schools.map((school) => school.displayName);
+  const names = [...new Set(bootstrap.questions.map((question) => categoryLabels[question.category] ?? question.category))];
   const repeated = [...names, ...names];
   track.innerHTML = repeated.map((name) => `<span class="school-chip">${name}</span>`).join("");
 }
@@ -178,15 +178,16 @@ function syncInstallExperience(platform, manifest) {
 
 function populateStats(bootstrap, manifest) {
   const questionNode = document.querySelector('[data-stat-target="questions"]');
-  const schoolNode = document.querySelector('[data-stat-target="schools"]');
+  const categoryNode = document.querySelector('[data-stat-target="categories"]');
   const formatNode = document.querySelector('[data-stat-target="formats"]');
   const packNode = document.querySelector("[data-pack-name]");
 
   if (questionNode) {
     animateCount(questionNode, bootstrap?.questions?.length ?? 0);
   }
-  if (schoolNode) {
-    animateCount(schoolNode, bootstrap?.schools?.length ?? 0);
+  if (categoryNode) {
+    const categories = new Set((bootstrap?.questions ?? []).map((question) => question.category));
+    animateCount(categoryNode, categories.size);
   }
   if (formatNode) {
     animateCount(formatNode, bootstrap?.matchPresets?.length ?? 0);
@@ -210,7 +211,7 @@ window.addEventListener("DOMContentLoaded", async () => {
       loadJson("./data/trial-preview.json"),
     ]);
 
-    renderSchoolTrack(bootstrap);
+    renderCategoryTrack(bootstrap);
     renderPresetGrid(bootstrap);
     populateStats(bootstrap, manifest);
     syncInstallExperience(platform, manifest);

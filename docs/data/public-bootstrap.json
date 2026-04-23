@@ -1,97 +1,39 @@
 {
-  "generatedAt": "2026-04-21T19:30:45.709Z",
-  "schools": [
-    {
-      "id": "gallaudet-university-model-secondary-school-for-the-deaf",
-      "displayName": "Gallaudet University Model Secondary School for the Deaf",
-      "shortName": "Gallaudet University Model",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    },
-    {
-      "id": "john-hersey-high-school",
-      "displayName": "John Hersey High School",
-      "shortName": "John Hersey High",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    },
-    {
-      "id": "california-school-for-the-deaf",
-      "displayName": "California School for the Deaf",
-      "shortName": "California School for",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    },
-    {
-      "id": "indiana-school-for-the-deaf",
-      "displayName": "Indiana School for the Deaf",
-      "shortName": "Indiana School for",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    },
-    {
-      "id": "maryland-school-for-the-deaf",
-      "displayName": "Maryland School for the Deaf",
-      "shortName": "Maryland School for",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    },
-    {
-      "id": "texas-school-for-the-deaf",
-      "displayName": "Texas School for the Deaf",
-      "shortName": "Texas School for",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    },
-    {
-      "id": "florida-school-for-the-deaf-and-the-blind",
-      "displayName": "Florida School for the Deaf and the Blind",
-      "shortName": "Florida School for",
-      "region": "National",
-      "state": "USA",
-      "selectable": true
-    }
-  ],
+  "generatedAt": "2026-04-23T13:11:10.968Z",
   "announcements": [
     {
       "id": "welcome-stable",
       "title": "Welcome to LOCKOUT!",
-      "body": "Players, coaches, and fans can create an account and begin right away.",
+      "body": "This message appears on the public welcome screen before anyone enters a room.",
       "tone": "highlight"
     }
   ],
   "matchPresets": [
     {
-      "id": "12-12-10",
-      "name": "12-12-10 Classic",
-      "description": "The default no-fuss quick-host format.",
-      "format": "12-12-10",
+      "id": "6-6-10",
+      "name": "6-6-10 Casual Classic",
+      "description": "Default party room for a fast casual LOCKOUT! session.",
+      "format": "6-6-10",
       "quickHost": true
     },
     {
-      "id": "16-16-10",
-      "name": "16-16-10 Extended",
-      "description": "An alternate match format for coaches and advanced players.",
-      "format": "16-16-10",
+      "id": "8-8-10",
+      "name": "8-8-10 Full Party",
+      "description": "Longer party room when the group wants a little more runway.",
+      "format": "8-8-10",
       "quickHost": false
     },
     {
-      "id": "20-20-15",
-      "name": "20-20-15 Marathon",
-      "description": "An alternate match format for coaches and advanced players.",
-      "format": "20-20-15",
+      "id": "10-10-10",
+      "name": "10-10-10 Long Party",
+      "description": "Extended party room for the biggest local sessions in the current V1.",
+      "format": "10-10-10",
       "quickHost": false
     },
     {
       "id": "1v1",
       "name": "1v1 Duel",
-      "description": "An alternate match format for coaches and advanced players.",
+      "description": "Future-facing duel room for friends, followers, and randoms while the full online rules stay provisional.",
       "format": "1v1",
       "quickHost": false
     }
@@ -99,9 +41,9 @@
   "studyPacks": [
     {
       "id": "public-core",
-      "name": "Public Core Pack",
-      "description": "Published starter material for public study and quick play.",
-      "publishedAt": "2026-04-21T19:30:45.709Z",
+      "name": "Public Welcome Bundle",
+      "description": "Player-facing starter bundle that the shipped app can load for public study and quick play.",
+      "publishedAt": "2026-04-23T13:11:10.969Z",
       "questionCount": 50
     }
   ],
@@ -111,7 +53,7 @@
       "category": "social_studies",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "After leading the Continental Army to victory in the American Revolution, this Virginian became the first president of the United States in 1789. He warned against permanent foreign alliances in his Farewell Address. Name this first U.S. president.",
+      "questionText": "He was the first president of the United States, and his face is on the one-dollar bill. Name him.",
       "answer": "George Washington",
       "acceptedAnswers": [
         "george washington",
@@ -119,44 +61,56 @@
       ],
       "answerValidationTags": [],
       "hasBonus": true,
-      "bonusQuestion": "This river crossing in December 1776 led to a surprise American victory at Trenton. Name this river crossed by Washington and his troops.",
-      "bonusAnswer": "Delaware River",
+      "bonusQuestion": "What is the name of the U.S. capital city that shares Washington's name?",
+      "bonusAnswer": "Washington, D.C.",
       "bonusAcceptedAnswers": [
-        "delaware river"
+        "washington, d.c.",
+        "washington dc",
+        "dc",
+        "d.c."
       ],
       "tags": [
         "presidents",
-        "american revolution"
+        "usa"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_grapes",
       "category": "language_literature",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Published in 1939, this John Steinbeck novel follows the Joad family as they travel from Oklahoma to California during the Dust Bowl. It won the National Book Award and Pulitzer Prize. Name this novel.",
-      "answer": "The Grapes of Wrath",
+      "questionText": "This author created Harry Potter, Hermione Granger, and Hogwarts. Name her.",
+      "answer": "J.K. Rowling",
       "acceptedAnswers": [
-        "the grapes of wrath",
-        "grapes of wrath"
+        "j.k. rowling",
+        "jk rowling",
+        "joanne rowling"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "steinbeck",
-        "dust bowl"
+      "hasBonus": true,
+      "bonusQuestion": "What school do Harry Potter and his friends attend?",
+      "bonusAnswer": "Hogwarts",
+      "bonusAcceptedAnswers": [
+        "hogwarts",
+        "hogwarts school of witchcraft and wizardry"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "books",
+        "harry potter"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_sesame",
       "category": "pop_culture_sports",
       "difficulty": 1,
       "roundType": "individual",
-      "questionText": "Debuting in 1969, this educational children's television series is set on an urban street populated by Big Bird, Oscar the Grouch, and Cookie Monster. Name this long-running program.",
+      "questionText": "Big Bird, Cookie Monster, and Oscar the Grouch all appear on this long-running kids TV show. Name it.",
       "answer": "Sesame Street",
       "acceptedAnswers": [
         "sesame street"
@@ -172,685 +126,926 @@
       "tags": [
         "television"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_cuckoo",
       "category": "arts_entertainment",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This 1975 film won the Academy Award for Best Picture and stars Jack Nicholson as Randle McMurphy, a patient who rebels against Nurse Ratched in a psychiatric hospital. Name this adaptation of a Ken Kesey novel.",
-      "answer": "One Flew Over the Cuckoo's Nest",
+      "questionText": "This Disney movie follows Simba, a lion cub who grows up to become king. Name the movie.",
+      "answer": "The Lion King",
       "acceptedAnswers": [
-        "one flew over the cuckoo's nest",
-        "cuckoo's nest"
+        "the lion king",
+        "lion king"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "film",
-        "academy awards"
+      "hasBonus": true,
+      "bonusQuestion": "What is Simba's father's name?",
+      "bonusAnswer": "Mufasa",
+      "bonusAcceptedAnswers": [
+        "mufasa"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "movies",
+        "disney"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_modelt",
       "category": "science_technology",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Introduced by Ford Motor Company in 1908, this automobile became famous for assembly-line production and widespread affordability. Name this pioneering car, commonly nicknamed the Tin Lizzie.",
-      "answer": "Model T",
+      "questionText": "This planet is known as the Red Planet. Name it.",
+      "answer": "Mars",
       "acceptedAnswers": [
-        "model t"
+        "mars"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "transportation",
-        "industrialization"
+      "hasBonus": true,
+      "bonusQuestion": "What planet do humans live on?",
+      "bonusAnswer": "Earth",
+      "bonusAcceptedAnswers": [
+        "earth"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "space"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_seuss",
       "category": "language_literature",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This children's author created The Cat in the Hat, Horton Hears a Who!, and Green Eggs and Ham. His real name was Theodor Geisel. Name this writer known by a two-word pen name.",
+      "questionText": "This author wrote Green Eggs and Ham and The Cat in the Hat. Name him.",
       "answer": "Dr. Seuss",
       "acceptedAnswers": [
         "dr. seuss"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "children's literature"
+      "hasBonus": true,
+      "bonusQuestion": "What color are the eggs in Green Eggs and Ham?",
+      "bonusAnswer": "Green",
+      "bonusAcceptedAnswers": [
+        "green"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "books",
+        "kids"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_math5digit",
       "category": "mathematics",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Multiply 53 by 200. What is the product?",
-      "answer": "10,600",
+      "questionText": "What is 9 times 9?",
+      "answer": "81",
       "acceptedAnswers": [
-        "10,600"
+        "81"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
-      "tags": [
-        "arithmetic"
+      "hasBonus": true,
+      "bonusQuestion": "What is 9 times 8?",
+      "bonusAnswer": "72",
+      "bonusAcceptedAnswers": [
+        "72"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "multiplication"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_math4digit",
       "category": "mathematics",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Add 750 and 750. What is the sum?",
-      "answer": "1500",
+      "questionText": "What is 25 plus 25?",
+      "answer": "50",
       "acceptedAnswers": [
-        "1500"
+        "50"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
-      "tags": [
-        "arithmetic"
+      "hasBonus": true,
+      "bonusQuestion": "What is 50 minus 20?",
+      "bonusAnswer": "30",
+      "bonusAcceptedAnswers": [
+        "30"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "addition"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_currency",
       "category": "mathematics",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "A ticket costs 42 dollars. Write that amount using the correct currency symbol.",
-      "answer": "$42",
+      "questionText": "Write five dollars using the correct dollar sign.",
+      "answer": "$5",
       "acceptedAnswers": [
-        "$42"
+        "$5"
       ],
       "answerValidationTags": [
         "math",
         "currency"
       ],
-      "hasBonus": false,
-      "tags": [
-        "currency"
+      "hasBonus": true,
+      "bonusQuestion": "Write fifty cents using the correct dollar sign.",
+      "bonusAnswer": "$0.50",
+      "bonusAcceptedAnswers": [
+        "$0.50",
+        "0.50",
+        ".50",
+        "$.50"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "tags": [
+        "money"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_fraction",
       "category": "mathematics",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Write the fraction that represents one part out of two equal parts. Give your answer in lowest terms.",
-      "answer": "1/2",
+      "questionText": "What decimal is equal to one-half?",
+      "answer": "0.5",
       "acceptedAnswers": [
-        "1/2"
+        "0.5",
+        ".5"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
+      "hasBonus": true,
+      "bonusQuestion": "What fraction is equal to 0.5?",
+      "bonusAnswer": "1/2",
+      "bonusAcceptedAnswers": [
+        "1/2"
+      ],
       "tags": [
         "fractions"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_amendment",
       "category": "social_studies",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Ratified in 1865, this amendment abolished slavery throughout the United States. Identify this amendment by its Roman numeral designation.",
-      "answer": "XIII",
+      "questionText": "What is the name of the building where the U.S. president lives?",
+      "answer": "White House",
       "acceptedAnswers": [
-        "xiii"
+        "white house",
+        "the white house"
       ],
-      "answerValidationTags": [
-        "amendment"
+      "answerValidationTags": [],
+      "hasBonus": true,
+      "bonusQuestion": "In what city is the White House located?",
+      "bonusAnswer": "Washington, D.C.",
+      "bonusAcceptedAnswers": [
+        "washington, d.c.",
+        "washington dc",
+        "dc",
+        "d.c."
       ],
-      "hasBonus": false,
       "tags": [
-        "constitution",
-        "reconstruction"
+        "usa",
+        "government"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_nato",
       "category": "current_events",
       "difficulty": 1,
       "roundType": "individual",
-      "questionText": "Founded in 1949, this military alliance includes the United States, Canada, and many European nations. Its name is often abbreviated by a four-letter acronym. Name this alliance.",
-      "answer": "NATO",
+      "questionText": "Which company makes the iPhone?",
+      "answer": "Apple",
       "acceptedAnswers": [
-        "nato"
+        "apple",
+        "apple inc."
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "choices": {
-        "A": "NAFTA",
-        "B": "NATO",
-        "C": "OPEC",
-        "D": "UNESCO"
+        "A": "Samsung",
+        "B": "Apple",
+        "C": "Sony",
+        "D": "Nintendo"
       },
       "tags": [
-        "international relations"
+        "technology"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.708Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_caravaggio",
       "category": "arts_entertainment",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This Italian Baroque painter used dramatic chiaroscuro to heighten emotional intensity. His works include The Calling of Saint Matthew and Judith Beheading Holofernes. Name this artist born Michelangelo Merisi.",
-      "answer": "Caravaggio",
+      "questionText": "This singer's Eras Tour became a massive global event. Name her.",
+      "answer": "Taylor Swift",
       "acceptedAnswers": [
-        "caravaggio"
+        "taylor swift",
+        "swift"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "painting",
-        "baroque"
+      "hasBonus": true,
+      "bonusQuestion": "What instrument is Taylor Swift often seen playing onstage?",
+      "bonusAnswer": "Guitar",
+      "bonusAcceptedAnswers": [
+        "guitar",
+        "acoustic guitar"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "music",
+        "pop"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_guernica",
       "category": "arts_entertainment",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Painted in response to the bombing of a Basque town during the Spanish Civil War, this monumental work by Pablo Picasso is rendered largely in black, white, and gray. Name this anti-war painting.",
-      "answer": "Guernica",
+      "questionText": "Elsa and Anna are sisters in this animated movie. Name it.",
+      "answer": "Frozen",
       "acceptedAnswers": [
-        "guernica"
+        "frozen"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "picasso",
-        "painting"
+      "hasBonus": true,
+      "bonusQuestion": "What kind of powers does Elsa have?",
+      "bonusAnswer": "Ice",
+      "bonusAcceptedAnswers": [
+        "ice",
+        "ice powers",
+        "ice magic",
+        "snow and ice"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "movies",
+        "disney"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_starry_night",
       "category": "arts_entertainment",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This Vincent van Gogh painting depicts a night sky of swirling stars above a quiet village and a dark cypress tree. It was painted while the artist was at Saint-Remy. Name this work.",
+      "questionText": "This famous painting by Vincent van Gogh shows a swirling night sky over a village. Name it.",
       "answer": "The Starry Night",
       "acceptedAnswers": [
         "the starry night",
         "starry night"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
+      "hasBonus": true,
+      "bonusQuestion": "Who painted The Starry Night?",
+      "bonusAnswer": "Vincent van Gogh",
+      "bonusAcceptedAnswers": [
+        "vincent van gogh",
+        "van gogh"
+      ],
       "tags": [
-        "van gogh",
+        "art",
         "painting"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_moonlight_sonata",
       "category": "arts_entertainment",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This piano sonata by Ludwig van Beethoven is officially Sonata No. 14 in C-sharp minor, but it is far better known by a nickname inspired by its calm opening movement. Name this sonata.",
-      "answer": "Moonlight Sonata",
+      "questionText": "This singer made the hit album Thriller. Name him.",
+      "answer": "Michael Jackson",
       "acceptedAnswers": [
-        "moonlight sonata"
+        "michael jackson",
+        "jackson"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "beethoven",
-        "music"
+      "hasBonus": true,
+      "bonusQuestion": "What dance move is Michael Jackson famous for gliding backward?",
+      "bonusAnswer": "Moonwalk",
+      "bonusAcceptedAnswers": [
+        "moonwalk",
+        "the moonwalk"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "music",
+        "pop"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pun",
       "category": "language_literature",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This figure of speech uses a word or phrase with more than one meaning, often for humorous or rhetorical effect. Shakespeare employs it in Romeo and Juliet when Mercutio says he will be found 'a grave man.' Name this device.",
-      "answer": "Pun",
+      "questionText": "What school do Harry Potter and his friends attend?",
+      "answer": "Hogwarts",
       "acceptedAnswers": [
-        "pun"
+        "hogwarts",
+        "hogwarts school of witchcraft and wizardry"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "rhetoric",
-        "literary devices"
+      "hasBonus": true,
+      "bonusQuestion": "What bird delivers letters in the Harry Potter world?",
+      "bonusAnswer": "Owl",
+      "bonusAcceptedAnswers": [
+        "owl",
+        "an owl"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "books",
+        "harry potter"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_allusion",
       "category": "language_literature",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This literary device occurs when a writer makes an indirect reference to another text, person, event, or work of art. Biblical and classical references are common examples of it. Name this device.",
-      "answer": "Allusion",
+      "questionText": "Who wrote Romeo and Juliet?",
+      "answer": "William Shakespeare",
       "acceptedAnswers": [
-        "allusion"
+        "william shakespeare",
+        "shakespeare"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "rhetoric",
-        "literary devices"
+      "hasBonus": true,
+      "bonusQuestion": "Who is Romeo in love with?",
+      "bonusAnswer": "Juliet",
+      "bonusAcceptedAnswers": [
+        "juliet"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "plays",
+        "authors"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_hamlet",
       "category": "language_literature",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This Shakespeare tragedy follows the Prince of Denmark as he seeks revenge for his father's murder by Claudius. Its most famous soliloquy begins, 'To be, or not to be.' Name this play.",
-      "answer": "Hamlet",
+      "questionText": "In texting, what does LOL stand for?",
+      "answer": "Laughing Out Loud",
       "acceptedAnswers": [
-        "hamlet"
+        "laughing out loud",
+        "lol"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "shakespeare"
+      "hasBonus": true,
+      "bonusQuestion": "In texting, what does BRB stand for?",
+      "bonusAnswer": "Be Right Back",
+      "bonusAcceptedAnswers": [
+        "be right back",
+        "brb"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "internet",
+        "language"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_great_expectations",
       "category": "language_literature",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "In this Charles Dickens novel, the orphan Pip receives mysterious financial help and believes Miss Havisham intends him for Estella. Name this Victorian novel.",
-      "answer": "Great Expectations",
+      "questionText": "Katniss Everdeen is the main character of this book and movie series. Name it.",
+      "answer": "The Hunger Games",
       "acceptedAnswers": [
-        "great expectations"
+        "the hunger games",
+        "hunger games"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "dickens",
-        "novels"
+      "hasBonus": true,
+      "bonusQuestion": "What weapon is Katniss best known for using?",
+      "bonusAnswer": "Bow and Arrow",
+      "bonusAcceptedAnswers": [
+        "bow and arrow",
+        "bow",
+        "a bow and arrow"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "books",
+        "movies"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_triangle_13",
       "category": "mathematics",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "A right triangle has legs measuring 5 centimeters and 12 centimeters. Using the Pythagorean theorem, find the length of the hypotenuse in centimeters.",
-      "answer": "13",
+      "questionText": "How many sides does a triangle have?",
+      "answer": "3",
       "acceptedAnswers": [
-        "13"
+        "3",
+        "three"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
-      "tags": [
-        "geometry"
+      "hasBonus": true,
+      "bonusQuestion": "How many sides does a square have?",
+      "bonusAnswer": "4",
+      "bonusAcceptedAnswers": [
+        "4",
+        "four"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "shapes"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pentagon_540",
       "category": "mathematics",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Find the sum of the interior angles of a pentagon in degrees.",
-      "answer": "540",
+      "questionText": "How many days are in a week?",
+      "answer": "7",
       "acceptedAnswers": [
-        "540"
+        "7",
+        "seven"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
-      "tags": [
-        "geometry"
+      "hasBonus": true,
+      "bonusQuestion": "How many months are in a year?",
+      "bonusAnswer": "12",
+      "bonusAcceptedAnswers": [
+        "12",
+        "twelve"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "counting"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_linear_4",
       "category": "mathematics",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Solve this equation for x: 3x + 5 = 17. Find x.",
+      "questionText": "What is 12 divided by 3?",
       "answer": "4",
       "acceptedAnswers": [
-        "4"
+        "4",
+        "four"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
-      "tags": [
-        "algebra"
+      "hasBonus": true,
+      "bonusQuestion": "What is 15 minus 5?",
+      "bonusAnswer": "10",
+      "bonusAcceptedAnswers": [
+        "10",
+        "ten"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "division"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_median_5",
       "category": "mathematics",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Find the median of this data set: 2, 5, and 9.",
-      "answer": "5",
+      "questionText": "What is 10 plus 5?",
+      "answer": "15",
       "acceptedAnswers": [
-        "5"
+        "15",
+        "fifteen"
       ],
       "answerValidationTags": [
         "math"
       ],
-      "hasBonus": false,
-      "tags": [
-        "statistics"
+      "hasBonus": true,
+      "bonusQuestion": "What is 20 minus 5?",
+      "bonusAnswer": "15",
+      "bonusAcceptedAnswers": [
+        "15",
+        "fifteen"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "addition"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_phelps",
       "category": "pop_culture_sports",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This American swimmer became the most decorated Olympian of all time, winning 23 gold medals across five Olympic Games. He specialized in butterfly and medley events. Name this athlete.",
-      "answer": "Michael Phelps",
+      "questionText": "This basketball legend won six championships with the Chicago Bulls and wore number 23. Name him.",
+      "answer": "Michael Jordan",
       "acceptedAnswers": [
-        "michael phelps",
-        "phelps"
+        "michael jordan",
+        "jordan"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "olympics",
-        "swimming"
+      "hasBonus": true,
+      "bonusQuestion": "What sport did Michael Jordan play?",
+      "bonusAnswer": "Basketball",
+      "bonusAcceptedAnswers": [
+        "basketball"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "sports",
+        "nba"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_gretzky",
       "category": "pop_culture_sports",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Known as 'The Great One,' this hockey player holds NHL career records for goals, assists, and total points. Name this Edmonton Oilers legend.",
-      "answer": "Wayne Gretzky",
+      "questionText": "This soccer star helped Argentina win the 2022 World Cup. Name him.",
+      "answer": "Lionel Messi",
       "acceptedAnswers": [
-        "wayne gretzky",
-        "gretzky"
+        "lionel messi",
+        "messi"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "hockey"
+      "hasBonus": true,
+      "bonusQuestion": "What sport does Lionel Messi play?",
+      "bonusAnswer": "Soccer",
+      "bonusAcceptedAnswers": [
+        "soccer",
+        "football"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "sports",
+        "world cup"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_jackie_robinson",
       "category": "pop_culture_sports",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "In 1947, this Brooklyn Dodgers infielder broke Major League Baseball's modern color barrier. He later had his number 42 retired across all MLB teams. Name this player.",
-      "answer": "Jackie Robinson",
+      "questionText": "This quarterback won seven Super Bowls, more than anyone else. Name him.",
+      "answer": "Tom Brady",
       "acceptedAnswers": [
-        "jackie robinson",
-        "robinson"
+        "tom brady",
+        "brady"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "baseball"
+      "hasBonus": true,
+      "bonusQuestion": "What sport did Tom Brady play?",
+      "bonusAnswer": "Football",
+      "bonusAcceptedAnswers": [
+        "football",
+        "american football"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "sports",
+        "nfl"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_marlee_matlin",
       "category": "pop_culture_sports",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "In 1986, this Deaf actress won the Academy Award for Best Actress for Children of a Lesser God. She later appeared on television in Reasonable Doubts and other series. Name this actress.",
-      "answer": "Marlee Matlin",
+      "questionText": "This singer is often called Queen Bey. Name her.",
+      "answer": "Beyonce",
       "acceptedAnswers": [
-        "marlee matlin",
-        "matlin"
+        "beyonce",
+        "beyonce knowles",
+        "beyonce knowles-carter"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "film",
-        "deaf heritage"
+      "hasBonus": true,
+      "bonusQuestion": "What word comes after Single in Beyonce's hit Single Ladies?",
+      "bonusAnswer": "Ladies",
+      "bonusAcceptedAnswers": [
+        "ladies"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "music",
+        "pop"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_neutron",
       "category": "science_technology",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Discovered by James Chadwick in 1932, this subatomic particle has approximately the same mass as a proton but carries no electric charge. Name this particle.",
-      "answer": "Neutron",
+      "questionText": "What gas do humans breathe to stay alive?",
+      "answer": "Oxygen",
       "acceptedAnswers": [
-        "neutron"
+        "oxygen"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "physics"
+      "hasBonus": true,
+      "bonusQuestion": "What gas do plants take in from the air?",
+      "bonusAnswer": "Carbon Dioxide",
+      "bonusAcceptedAnswers": [
+        "carbon dioxide",
+        "co2"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "science",
+        "air"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_mitochondrion",
       "category": "science_technology",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This organelle is often called the powerhouse of the cell because it produces most cellular ATP through respiration. Name this organelle.",
-      "answer": "Mitochondrion",
+      "questionText": "What part of the body pumps blood?",
+      "answer": "Heart",
       "acceptedAnswers": [
-        "mitochondrion",
-        "mitochondria"
+        "heart",
+        "the heart"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "biology",
-        "organelles"
+      "hasBonus": true,
+      "bonusQuestion": "How many lungs does a typical human have?",
+      "bonusAnswer": "2",
+      "bonusAcceptedAnswers": [
+        "2",
+        "two"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "body"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_photosynthesis",
       "category": "science_technology",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "In this biological process, plants use light energy to convert carbon dioxide and water into glucose and oxygen. Name this process.",
+      "questionText": "What process do plants use to turn sunlight into food?",
       "answer": "Photosynthesis",
       "acceptedAnswers": [
         "photosynthesis"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "biology"
+      "hasBonus": true,
+      "bonusQuestion": "Plants take in this gas and release oxygen. Name the gas they take in.",
+      "bonusAnswer": "Carbon Dioxide",
+      "bonusAcceptedAnswers": [
+        "carbon dioxide",
+        "co2"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "plants"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_mendel",
       "category": "science_technology",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "By experimenting with pea plants, this Austrian monk established foundational laws of heredity such as segregation and independent assortment. Name this scientist.",
-      "answer": "Gregor Mendel",
+      "questionText": "This company makes Windows and the Xbox. Name it.",
+      "answer": "Microsoft",
       "acceptedAnswers": [
-        "gregor mendel",
-        "mendel"
+        "microsoft"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "genetics"
+      "hasBonus": true,
+      "bonusQuestion": "What game console brand is made by Microsoft?",
+      "bonusAnswer": "Xbox",
+      "bonusAcceptedAnswers": [
+        "xbox"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "technology",
+        "gaming"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_magna_carta",
       "category": "social_studies",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Sealed in 1215 under King John of England, this charter limited royal power and became an important foundation for later constitutional government. Name this document.",
-      "answer": "Magna Carta",
+      "questionText": "In what country is Paris?",
+      "answer": "France",
       "acceptedAnswers": [
-        "magna carta"
+        "france"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "british history",
-        "law"
+      "hasBonus": true,
+      "bonusQuestion": "In what country is Rome?",
+      "bonusAnswer": "Italy",
+      "bonusAcceptedAnswers": [
+        "italy"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "geography"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_marshall_plan",
       "category": "social_studies",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "After World War II, the United States used this recovery program to provide economic aid to Western Europe and counter Soviet influence. Name this plan, officially the European Recovery Program.",
-      "answer": "Marshall Plan",
+      "questionText": "What U.S. holiday is celebrated on July 4?",
+      "answer": "Independence Day",
       "acceptedAnswers": [
-        "marshall plan",
-        "the marshall plan"
+        "independence day",
+        "the fourth of july",
+        "fourth of july"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "cold war"
+      "hasBonus": true,
+      "bonusQuestion": "What month is Independence Day in?",
+      "bonusAnswer": "July",
+      "bonusAcceptedAnswers": [
+        "july"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "holidays",
+        "usa"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_catherine_great",
       "category": "social_studies",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "This Russian empress ruled from 1762 to 1796 after deposing her husband Peter III. She expanded Russian territory and is commonly remembered by a grand epithet. Name this ruler.",
-      "answer": "Catherine the Great",
+      "questionText": "What city is famous for the Statue of Liberty?",
+      "answer": "New York City",
       "acceptedAnswers": [
-        "catherine the great",
-        "catherine ii"
+        "new york city",
+        "nyc",
+        "new york"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "russia",
-        "monarchs"
+      "hasBonus": true,
+      "bonusQuestion": "In what state is New York City?",
+      "bonusAnswer": "New York",
+      "bonusAcceptedAnswers": [
+        "new york"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "geography",
+        "usa"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_declaration_independence",
       "category": "social_studies",
       "difficulty": 1,
       "roundType": "team_discussion",
-      "questionText": "Adopted on July 4, 1776, this American document announced that the thirteen colonies were free and independent states. Thomas Jefferson was its principal author. Name this document.",
-      "answer": "Declaration of Independence",
+      "questionText": "What document begins with the words We the People?",
+      "answer": "The Constitution",
       "acceptedAnswers": [
-        "declaration of independence",
-        "the declaration of independence"
+        "the constitution",
+        "constitution",
+        "u.s. constitution",
+        "us constitution"
       ],
       "answerValidationTags": [],
-      "hasBonus": false,
-      "tags": [
-        "american revolution"
+      "hasBonus": true,
+      "bonusQuestion": "Finish the opening words: We the ____.",
+      "bonusAnswer": "People",
+      "bonusAcceptedAnswers": [
+        "people"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "tags": [
+        "usa",
+        "government"
+      ],
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_who_accord",
       "category": "current_events",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "individual",
-      "questionText": "In 2024, member states continued negotiating a global pandemic accord under this Geneva-based health agency. Name this United Nations specialized agency, commonly abbreviated by three letters.",
-      "answer": "WHO",
+      "questionText": "Which app is known for short viral videos and dance clips?",
+      "answer": "TikTok",
       "acceptedAnswers": [
-        "who",
-        "world health organization"
+        "tiktok",
+        "tik tok"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "choices": {
-        "A": "WHO",
-        "B": "UNESCO",
-        "C": "NATO",
-        "D": "OPEC"
+        "A": "Instagram",
+        "B": "TikTok",
+        "C": "Zoom",
+        "D": "LinkedIn"
       },
       "tags": [
-        "international organizations"
+        "apps",
+        "internet"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_nasa_artemis",
       "category": "current_events",
       "difficulty": 1,
       "roundType": "individual",
-      "questionText": "In 2025, this United States agency continued preparations for the Artemis II mission, which is expected to send astronauts around the Moon. Name this agency.",
+      "questionText": "What U.S. space agency is behind the Artemis missions to the Moon?",
       "answer": "NASA",
       "acceptedAnswers": [
         "nasa",
@@ -867,260 +1062,260 @@
       "tags": [
         "space"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_icc_warrants",
       "category": "current_events",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "individual",
-      "questionText": "In 2024, prosecutors at this Hague-based court sought arrest warrants connected to the Israel-Hamas war. Name this permanent court that tries individuals for war crimes and crimes against humanity.",
-      "answer": "International Criminal Court",
+      "questionText": "Which company created ChatGPT?",
+      "answer": "OpenAI",
       "acceptedAnswers": [
-        "international criminal court",
-        "icc"
+        "openai",
+        "open ai"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "choices": {
-        "A": "International Court of Justice",
-        "B": "European Court of Human Rights",
-        "C": "International Criminal Court",
-        "D": "Permanent Court of Arbitration"
+        "A": "Google",
+        "B": "OpenAI",
+        "C": "Netflix",
+        "D": "Spotify"
       },
       "tags": [
-        "international law"
+        "ai",
+        "technology"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_cop29",
       "category": "current_events",
       "difficulty": 1,
       "roundType": "individual",
-      "questionText": "In November 2024, world leaders met in Baku for this United Nations climate conference. Name this conference by its common abbreviated title.",
-      "answer": "COP29",
+      "questionText": "Which electric car company is most closely tied to Elon Musk?",
+      "answer": "Tesla",
       "acceptedAnswers": [
-        "cop29",
-        "cop 29"
+        "tesla"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "choices": {
-        "A": "G20",
-        "B": "COP29",
-        "C": "ASEAN",
-        "D": "APEC"
+        "A": "Ford",
+        "B": "Tesla",
+        "C": "Nintendo",
+        "D": "Adidas"
       },
       "tags": [
-        "climate"
+        "cars",
+        "technology"
       ],
-      "source": "original",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_deaf_heritage",
       "category": "potpourri",
       "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "Published in 1981 by Jack Gannon, this book became a classic survey of Deaf history and culture. Name this book, which supplied the answers to an entire mini-quiz in Grindrod's study guide.",
-      "answer": "Deaf Heritage",
+      "questionText": "What board game uses fake money, railroads, and hotels?",
+      "answer": "Monopoly",
       "acceptedAnswers": [
-        "deaf heritage"
+        "monopoly"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "books"
+        "games"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_deleppe",
       "category": "potpourri",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "Born in Versailles, this French priest established the first free public school for the Deaf in 1771 and advocated the use of natural signs. Name this 'father of Sign Language and Deaf Education.'",
-      "answer": "Charles-Michel de l'Epee",
+      "questionText": "What mountain is the tallest in the world above sea level?",
+      "answer": "Mount Everest",
       "acceptedAnswers": [
-        "charles-michel de l'epee",
-        "de l'epee",
-        "abbe de l'epee"
+        "mount everest",
+        "everest"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "education"
+        "geography"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_clerc",
       "category": "potpourri",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "This Deaf teacher from France moved to Hartford in 1816 and co-founded the American School for the Deaf with Thomas Hopkins Gallaudet. Name this educator.",
-      "answer": "Laurent Clerc",
+      "questionText": "What toy brand is famous for colorful plastic bricks?",
+      "answer": "LEGO",
       "acceptedAnswers": [
-        "laurent clerc",
-        "clerc"
+        "lego"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "education"
+        "toys"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_asd",
       "category": "potpourri",
       "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "Founded in Hartford, Connecticut in 1817, this institution was the first American school for Deaf students. Name this school.",
-      "answer": "American School for the Deaf",
+      "questionText": "What video game character says It's-a me and wears red overalls?",
+      "answer": "Mario",
       "acceptedAnswers": [
-        "american school for the deaf"
+        "mario",
+        "super mario"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "education"
+        "games",
+        "nintendo"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_cogswell",
       "category": "potpourri",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "The first graduate of the American School for the Deaf was this girl whose education inspired Thomas Hopkins Gallaudet to pursue Deaf education. Name her.",
-      "answer": "Alice Cogswell",
+      "questionText": "What dessert do people usually put birthday candles on?",
+      "answer": "Cake",
       "acceptedAnswers": [
-        "alice cogswell",
-        "cogswell"
+        "cake",
+        "birthday cake"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "education"
+        "food"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_hoy",
       "category": "potpourri",
       "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "According to Grindrod's Deaf Time-Line, this baseball player inspired umpires to adopt hand signals for calls such as out, safe, and strike. Name this player, whose nickname was 'Dummy.'",
-      "answer": "William Hoy",
+      "questionText": "What yellow fruit is often linked with monkeys?",
+      "answer": "Banana",
       "acceptedAnswers": [
-        "william hoy",
-        "dummy hoy",
-        "hoy"
+        "banana",
+        "bananas"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "sports"
+        "food"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_mssd",
       "category": "potpourri",
       "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "Established in 1966 on the campus of Gallaudet University, this secondary school is commonly abbreviated MSSD. Give the full name of this school.",
-      "answer": "Model Secondary School for the Deaf",
+      "questionText": "What fast-food chain uses the slogan I'm Lovin' It?",
+      "answer": "McDonald's",
       "acceptedAnswers": [
-        "model secondary school for the deaf"
+        "mcdonald's",
+        "mcdonalds"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "schools"
+        "food",
+        "brands"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_dpn",
       "category": "potpourri",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "The 1988 Deaf President Now protest at Gallaudet University ended with the selection of this man as the university's first Deaf president. Name him.",
-      "answer": "I. King Jordan",
+      "questionText": "What ocean is on California's west coast?",
+      "answer": "Pacific Ocean",
       "acceptedAnswers": [
-        "i. king jordan",
-        "iking jordan",
-        "i king jordan",
-        "jordan"
+        "pacific ocean",
+        "pacific"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "gallaudet"
+        "geography"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_veditz",
       "category": "potpourri",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "This former NAD president declared in 1913, 'As long as we have deaf people on earth, we will have signs.' Name this advocate who raised money to film signed language on the new medium of motion picture film.",
-      "answer": "George W. Veditz",
+      "questionText": "What drink is made from roasted beans and helps wake people up?",
+      "answer": "Coffee",
       "acceptedAnswers": [
-        "george w. veditz",
-        "george veditz",
-        "veditz"
+        "coffee"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "advocacy"
+        "drinks"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     },
     {
       "id": "q_pot_andrew_foster",
       "category": "potpourri",
-      "difficulty": 2,
+      "difficulty": 1,
       "roundType": "potpourri",
-      "questionText": "Known as the Father of Deaf African Education, this man founded 31 schools for Deaf students across Africa and was the first Black Deaf graduate of Gallaudet College. Name him.",
-      "answer": "Andrew Foster",
+      "questionText": "What holiday is known for pumpkins, costumes, and trick-or-treating?",
+      "answer": "Halloween",
       "acceptedAnswers": [
-        "andrew foster",
-        "foster"
+        "halloween"
       ],
       "answerValidationTags": [],
       "hasBonus": false,
       "tags": [
-        "deaf heritage",
-        "education"
+        "holidays"
       ],
-      "source": "grindrod study guide",
-      "dateAdded": "2026-04-21T19:30:45.707Z"
+      "source": "curated-trial",
+      "dateAdded": "2026-04-23T00:00:00.000Z",
+      "bankId": "trial-core"
     }
   ]
 }
