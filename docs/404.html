@@ -1,1 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOCKOUT Redirect</title>
+  </head>
+  <body>
+    <script>
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search || "";
+        var hash = window.location.hash || "";
+        var repoRoot = "/lockout-distribution";
 
+        if (path.indexOf(repoRoot + "/") === 0 || path === repoRoot) {
+          window.location.replace(repoRoot + "/" + search + hash);
+          return;
+        }
+
+        window.location.replace("/" + search + hash);
+      })();
+    </script>
+  </body>
+</html>
