@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-04-28T16:06:50.748Z",
+  "systemStrings": {
+    "appTitle": "LOCKOUT!",
+    "homeWelcome": "Jump into the Night.",
+    "homeSubtitle": "Competitive trivia for the bar, the dorm, and the street.",
+    "signupCta": "Create Your Local Account",
+    "loginPrompt": "Identity Plus Password"
+  },
+  "announcements": [
+    {
+      "id": "welcome-stable",
+      "title": "Tonight's Warm-Up",
+      "body": "Release messages here should feel like a home-screen nudge for a bar-or-dorm crowd, not a school bulletin.",
+      "tone": "highlight"
+    }
+  ],
+  "matchPresets": [
+    {
+      "id": "6-6-10",
+      "name": "6-6-10 Casual Classic",
+      "description": "Default casual/classic room for bars, dorms, and low-friction rematches. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "format": "6-6-10",
+      "quickHost": true
+    },
+    {
+      "id": "8-8-10",
+      "name": "8-8-10 Full Party",
+      "description": "Alternate V1 party room for longer in-person sessions. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "format": "8-8-10",
+      "quickHost": false
+    },
+    {
+      "id": "10-10-10",
+      "name": "10-10-10 Long Party",
+      "description": "Alternate V1 party room for longer in-person sessions. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "format": "10-10-10",
+      "quickHost": false
+    },
+    {
+      "id": "1v1",
+      "name": "1v1 Future Duel",
+      "description": "Future-facing duel room for friends, followers, and randoms while the online rulebook is still being finalized. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "format": "1v1",
+      "quickHost": false
+    }
+  ],
+  "studyPacks": [
+    {
+      "id": "public-core",
+      "name": "Public Welcome Bundle",
+      "description": "Player-facing starter bundle that the shipped app can actually load right now.",
+      "publishedAt": "2026-04-28T16:06:50.748Z",
+      "questionCount": 2
+    }
+  ],
+  "questions": [
+    {
+      "id": "lockout_001",
+      "category": "the_grind",
+      "difficulty": 1,
+      "roundType": "individual",
+      "questionText": "What is the primary color of the LOCKOUT! neon aesthetic?",
+      "answer": "Cyan",
+      "acceptedAnswers": [
+        "cyan",
+        "blue"
+      ],
+      "answerValidationTags": [
+        "exact"
+      ],
+      "hasBonus": false,
+      "choices": {
+        "A": "Cyan",
+        "B": "Green",
+        "C": "Yellow",
+        "D": "Orange"
+      },
+      "tags": [
+        "visual",
+        "brand"
+      ],
+      "source": "v2-core",
+      "dateAdded": "2026-04-28T15:58:55.999Z",
+      "bankId": "trial-core"
+    },
+    {
+      "id": "lockout_002",
+      "category": "the_grind",
+      "difficulty": 1,
+      "roundType": "individual",
+      "questionText": "This is a public sample bank. Are you ready to dominate some trivia?",
+      "answer": "Yes",
+      "acceptedAnswers": [
+        "yes",
+        "yeah",
+        "ready"
+      ],
+      "answerValidationTags": [
+        "exact"
+      ],
+      "hasBonus": false,
+      "tags": [
+        "meta",
+        "welcome"
+      ],
+      "source": "v2-core",
+      "dateAdded": "2026-04-28T15:58:55.999Z",
+      "bankId": "trial-core"
+    }
+  ]
+}
