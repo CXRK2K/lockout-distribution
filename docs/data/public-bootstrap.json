@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T15:00:05.962Z",
+  "generatedAt": "2026-04-30T15:00:22.695Z",
   "systemStrings": {
     "appTitle": "LOCKOUT!",
     "homeWelcome": "Jump into the Night!",
@@ -50,7 +50,7 @@
       "id": "public-core",
       "name": "Public Welcome Bundle",
       "description": "Player-facing starter bundle that the shipped app can actually load right now.",
-      "publishedAt": "2026-04-30T15:00:05.962Z",
+      "publishedAt": "2026-04-30T15:00:22.695Z",
       "questionCount": 24
     }
   ],
