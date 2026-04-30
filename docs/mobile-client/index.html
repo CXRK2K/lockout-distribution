@@ -2,22 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/lockout-icon.svg" />
-    <title>LOCKOUT Mobile Client</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <title>LOCKOUT!</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="mobile-shell">
-      <section class="mobile-panel">
-        <p class="badge">LOCKOUT!</p>
+    <div id="screen-join" class="screen">
+      <div class="card">
+        <div class="badge">LOCKOUT!</div>
         <h1>Join the Room</h1>
-        <p class="subtitle">Stay on the same Wi-Fi as the host booth. Answers sync locally, and the phone buzzes when your response is locked in.</p>
-        <div class="status" id="status">Connecting to the local LOCKOUT room...</div>
-        <textarea id="answer" placeholder="Drop your answer here..."></textarea>
-        <button id="submit">Lock It In</button>
-      </section>
-    </main>
-    <script src="/app.js"></script>
+        <p class="sub">Same Wi-Fi as the host. Enter your name to lock in.</p>
+        <input id="name-input" type="text" maxlength="24" placeholder="Your name" autocomplete="off" spellcheck="false" />
+        <button id="join-btn" class="btn btn-primary">Enter Room</button>
+        <p id="join-error" class="error-msg" hidden></p>
+      </div>
+    </div>
+
+    <div id="screen-lobby" class="screen" hidden>
+      <div class="card">
+        <div class="badge">LOCKOUT!</div>
+        <h1 id="lobby-title">Waiting for host…</h1>
+        <p class="sub" id="lobby-sub">You're in. Sit tight.</p>
+        <div class="player-list" id="lobby-players"></div>
+      </div>
+    </div>
+
+    <div id="screen-question" class="screen" hidden>
+      <div class="card question-card">
+        <div class="q-meta">
+          <span class="badge" id="q-counter">Q 1 / 1</span>
+          <div class="timer-wrap"><div id="timer-bar" class="timer-bar"></div></div>
+        </div>
+        <p id="q-text" class="q-text"></p>
+        <div class="choices" id="choices"></div>
+      </div>
+    </div>
+
+    <div id="screen-locked" class="screen" hidden>
+      <div class="card center-card">
+        <div class="locked-icon">⚡</div>
+        <h2>Locked In</h2>
+        <p class="sub" id="locked-choice-label"></p>
+        <p class="muted">Waiting for reveal…</p>
+      </div>
+    </div>
+
+    <div id="screen-reveal" class="screen" hidden>
+      <div class="card">
+        <div class="reveal-verdict" id="reveal-verdict"></div>
+        <p class="reveal-delta" id="reveal-delta"></p>
+        <p class="reveal-score" id="reveal-score"></p>
+        <div class="reveal-choices" id="reveal-choices"></div>
+        <div class="leaderboard" id="reveal-board"></div>
+      </div>
+    </div>
+
+    <div id="screen-gameover" class="screen" hidden>
+      <div class="card">
+        <div class="badge">FINAL SCORES</div>
+        <h1>Game Over</h1>
+        <div class="leaderboard final-board" id="gameover-board"></div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
