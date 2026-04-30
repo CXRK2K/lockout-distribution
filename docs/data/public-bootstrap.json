@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T16:19:43.264Z",
+  "generatedAt": "2026-04-30T16:20:48.233Z",
   "systemStrings": {
     "appTitle": "LOCKOUT!",
     "homeWelcome": "Jump into the Night!",
@@ -19,21 +19,21 @@
     {
       "id": "6-6-10",
       "name": "6-6-10 Casual Classic",
-      "description": "Default casual/classic room for bars, dorms, and low-friction rematches. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "description": "Default casual/classic room for bars, dorms, and low-friction rematches.",
       "format": "6-6-10",
       "quickHost": true
     },
     {
       "id": "8-8-10",
       "name": "8-8-10 Full Party",
-      "description": "Alternate V1 party room for longer in-person sessions. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "description": "Alternate party room for longer in-person sessions.",
       "format": "8-8-10",
       "quickHost": false
     },
     {
       "id": "10-10-10",
       "name": "10-10-10 Long Party",
-      "description": "Alternate V1 party room for longer in-person sessions. These room templates are provisional V1 scaffolding until the authoritative LOCKOUT competitive-mode spec is finalized.",
+      "description": "Longest possible match format, for longer fun sessions!",
       "format": "10-10-10",
       "quickHost": false
     },
@@ -50,14 +50,14 @@
       "id": "pack-1777390825671",
       "name": "Test Set",
       "description": "Player-facing bundle that the shipped app can load after the owner dataset is saved.",
-      "publishedAt": "2026-04-30T16:19:43.264Z",
+      "publishedAt": "2026-04-30T16:20:48.233Z",
       "questionCount": 24
     },
     {
       "id": "public-core",
       "name": "Public Welcome Bundle",
       "description": "Player-facing starter bundle that the shipped app can actually load right now.",
-      "publishedAt": "2026-04-30T16:19:43.264Z",
+      "publishedAt": "2026-04-30T16:20:48.233Z",
       "questionCount": 24
     }
   ],
