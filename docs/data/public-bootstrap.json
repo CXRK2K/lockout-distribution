@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-30T16:20:48.233Z",
+  "generatedAt": "2026-04-30T16:20:50.502Z",
   "systemStrings": {
     "appTitle": "LOCKOUT!",
     "homeWelcome": "Jump into the Night!",
@@ -50,14 +50,14 @@
       "id": "pack-1777390825671",
       "name": "Test Set",
       "description": "Player-facing bundle that the shipped app can load after the owner dataset is saved.",
-      "publishedAt": "2026-04-30T16:20:48.233Z",
+      "publishedAt": "2026-04-30T16:20:50.502Z",
       "questionCount": 24
     },
     {
       "id": "public-core",
       "name": "Public Welcome Bundle",
       "description": "Player-facing starter bundle that the shipped app can actually load right now.",
-      "publishedAt": "2026-04-30T16:20:48.233Z",
+      "publishedAt": "2026-04-30T16:20:50.502Z",
       "questionCount": 24
     }
   ],
