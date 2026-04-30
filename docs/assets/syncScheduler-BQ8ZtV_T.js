@@ -1,1 +1,0 @@
-import{b as s,s as n,w as o}from"./index-DM4fBEgR.js";function a(){return s(n.syncQueue,{pendingJobs:0})}function u(t){const e=a();o(n.syncQueue,{...e,lastStatsPushAt:new Date().toISOString(),pendingJobs:e.pendingJobs+1,payload:t})}export{u as q,a as r};
