@@ -84,4 +84,30 @@ See [DEPLOY.md](./DEPLOY.md) for the full deployment runbook, smoke-test checkli
 
 ---
 
+## For Developers
+
+This repository is a **distribution-only** repo: it hosts the GitHub Pages web trial, the mobile buzzer client static bundle, and (eventually) signed desktop installers. **No source code lives here.**
+
+All app development happens in the private [`lockout-core`](https://github.com/CXRK2K/lockout-core) repo. Internal admin assets (DB snapshots, env templates, the canonical graphify knowledge graph) live in the private [`lockout-private`](https://github.com/CXRK2K/lockout-private) repo.
+
+To rebuild the static `docs/` payload from the latest `lockout-core` source:
+
+```bash
+# In the lockout-core repo:
+npm install
+npm run build:public
+npm run web:export-distribution   # copies dist_public → ../LOCKOUT-Distribution/docs/
+
+# Then in this repo:
+git add docs/
+git commit -m "release: rebuild static web trial from lockout-core <commit>"
+git push
+```
+
+GitHub Pages serves from `docs/` on the `main` branch. The deployment runbook is in [DEPLOY.md](./DEPLOY.md).
+
+If you are an AI agent, see the master workspace README at the parent of this repo for the full 3-repo split, knowledge graph pointers, and operating protocol.
+
+---
+
 *Source code and internal tooling live in the private `lockout-core` and `lockout-private` repositories.*
