@@ -21,6 +21,13 @@ Before publishing a new asset bundle:
 
 ## Deployment Steps
 
+**Automated path (preferred):** run `npm run release:web` in `lockout-core`.
+It performs steps 1–4 below (build, private-identifier leak gate, copy with
+preserved paths, static validation) and stops before the push so a human
+reviews and commits. See `lockout-core/scripts/release-web.mjs`.
+
+Manual equivalent:
+
 1. Build the public web app from `lockout-core`:
    ```bash
    npm run build:web

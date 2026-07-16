@@ -61,9 +61,12 @@ Guest mode drops you into a match in seconds.
 
 ## Desktop App
 
-Desktop builds for macOS and Windows are in development.
+Windows installers are published on [Releases](https://github.com/CXRK2K/lockout-distribution/releases) — grab the latest `LOCKOUT_<version>_x64-setup.exe` (NSIS) or `LOCKOUT_<version>_x64_en-US.msi`.
 
-Once released, installers will be published to [Releases](https://github.com/CXRK2K/lockout-distribution/releases) and linked here.
+> **Unsigned-binary note:** installers are not code-signed (no signing
+> certificate exists for this project yet). Windows SmartScreen will warn on
+> first run — choose "More info" → "Run anyway". On macOS, if/when builds are
+> published, Gatekeeper requires right-click → Open on first launch.
 
 ---
 
@@ -79,7 +82,7 @@ Stay connected to the same Wi-Fi as the host. Answers sync locally — no intern
 
 ## Version
 
-**v2.0.0** — Built from the private `lockout-core` repository.
+**v2.0.2** — Built from the private `lockout-core` repository.
 
 ---
 
