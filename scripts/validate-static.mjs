@@ -25,4 +25,23 @@ await mustContain(
   "SPA fallback redirect logic",
 );
 
+// SECURITY: the bootstrap JSON is served world-readable. Answer fields are the
+// quiz answer key and must never reach this artifact (they are stripped by
+// lockout-core's publicBootstrapBuilder and re-attached inside the app from
+// its embedded bank). Fail the deploy if any leak through.
+const bootstrapPath = path.join(root, "docs", "data", "public-bootstrap.json");
+const bootstrap = JSON.parse(await readFile(bootstrapPath, "utf8"));
+const forbiddenFields = ["answer", "acceptedAnswers", "bonusAnswer", "bonusAcceptedAnswers"];
+const leakyQuestions = (bootstrap.questions ?? []).filter((question) =>
+  forbiddenFields.some((field) => field in question),
+);
+if (leakyQuestions.length > 0) {
+  throw new Error(
+    `Validation failed: ${leakyQuestions.length} question(s) in public-bootstrap.json carry answer fields (${leakyQuestions
+      .slice(0, 5)
+      .map((question) => question.id)
+      .join(", ")}...). Refusing to deploy the answer key.`,
+  );
+}
+
 console.log("Static distribution validation passed.");
