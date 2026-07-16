@@ -37,6 +37,24 @@ Manual equivalent:
 4. Run pre-deploy verification above.
 5. Commit and push to `main` — GitHub Pages deploys automatically.
 
+## Publishing Installers (GitHub Releases)
+
+The official path is manual `gh release create` (the old automated
+`public-release.yml` workflow lived in lockout-private, targeted the
+now-archived source mirror, and its `PUBLIC_RELEASE_TOKEN` secret was never
+set). From a folder containing the **public** installers built by
+lockout-core's `npm run tauri:build:public`:
+
+```bash
+sha256sum "LOCKOUT_<ver>_x64-setup.exe" "LOCKOUT_<ver>_x64_en-US.msi" > SHA256SUMS.txt
+gh release create v<ver> --repo CXRK2K/lockout-distribution \
+  --title "LOCKOUT v<ver>" --notes-file <notes.md> \
+  "LOCKOUT_<ver>_x64-setup.exe" "LOCKOUT_<ver>_x64_en-US.msi" SHA256SUMS.txt
+```
+
+Never attach internal-channel installers here — this repo is public.
+Release notes must carry the unsigned-binary SmartScreen note.
+
 ## Smoke-Test Checklist
 
 After every deployment:
