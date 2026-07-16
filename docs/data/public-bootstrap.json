@@ -54,10 +54,6 @@
       "difficulty": 1,
       "roundType": "team_discussion",
       "questionText": "In what year was Gallaudet University founded?",
-      "answer": "1864",
-      "acceptedAnswers": [
-        "1864"
-      ],
       "answerValidationTags": [
         "math"
       ],
@@ -75,10 +71,6 @@
       "difficulty": 1,
       "roundType": "individual",
       "questionText": "What element has the chemical symbol 'Au'?",
-      "answer": "Gold",
-      "acceptedAnswers": [
-        "gold"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -102,12 +94,6 @@
       "difficulty": 2,
       "roundType": "individual",
       "questionText": "What is the powerhouse of the cell?",
-      "answer": "Mitochondria",
-      "acceptedAnswers": [
-        "mitochondria",
-        "the mitochondria",
-        "mitochondrion"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -125,12 +111,6 @@
       "difficulty": 2,
       "roundType": "team_discussion",
       "questionText": "Who invented the telephone, which also significantly impacted Deaf education debates?",
-      "answer": "Alexander Graham Bell",
-      "acceptedAnswers": [
-        "alexander graham bell",
-        "bell",
-        "a.g. bell"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -148,10 +128,6 @@
       "difficulty": 3,
       "roundType": "individual",
       "questionText": "What amendment to the U.S. Constitution abolished slavery?",
-      "answer": "XIII",
-      "acceptedAnswers": [
-        "XIII"
-      ],
       "answerValidationTags": [
         "amendment"
       ],
@@ -169,10 +145,6 @@
       "difficulty": 1,
       "roundType": "individual",
       "questionText": "What planet is known as the Red Planet?",
-      "answer": "Mars",
-      "acceptedAnswers": [
-        "mars"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -196,10 +168,6 @@
       "difficulty": 1,
       "roundType": "individual",
       "questionText": "In texting slang, what does 'SMH' stand for?",
-      "answer": "Shaking my head",
-      "acceptedAnswers": [
-        "shaking my head"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -223,12 +191,6 @@
       "difficulty": 1,
       "roundType": "team_discussion",
       "questionText": "What fast food chain is known for its 'Baconator' burger?",
-      "answer": "Wendy's",
-      "acceptedAnswers": [
-        "wendy's",
-        "wendys",
-        "wendy"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -246,10 +208,6 @@
       "difficulty": 2,
       "roundType": "individual",
       "questionText": "What shoe brand uses the slogan 'Just Do It'?",
-      "answer": "Nike",
-      "acceptedAnswers": [
-        "nike"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -267,11 +225,6 @@
       "difficulty": 2,
       "roundType": "individual",
       "questionText": "What social media platform is known for its disappearing messages and Snap Streaks?",
-      "answer": "Snapchat",
-      "acceptedAnswers": [
-        "snapchat",
-        "snap"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -295,12 +248,6 @@
       "difficulty": 1,
       "roundType": "individual",
       "questionText": "Which city is known as 'The Big Apple'?",
-      "answer": "New York City",
-      "acceptedAnswers": [
-        "new york city",
-        "new york",
-        "nyc"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -318,13 +265,6 @@
       "difficulty": 3,
       "roundType": "individual",
       "questionText": "In basketball, what does a 'triple-double' require?",
-      "answer": "Double digits in three statistical categories",
-      "acceptedAnswers": [
-        "double digits in three statistical categories",
-        "double digits in 3 categories",
-        "10 or more in 3 stats",
-        "double digits in three categories"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -342,10 +282,6 @@
       "difficulty": 1,
       "roundType": "individual",
       "questionText": "What animated movie features a clownfish named Nemo?",
-      "answer": "Finding Nemo",
-      "acceptedAnswers": [
-        "finding nemo"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -369,11 +305,6 @@
       "difficulty": 1,
       "roundType": "team_discussion",
       "questionText": "Who played the lead role in the 2018 film 'Black Panther'?",
-      "answer": "Chadwick Boseman",
-      "acceptedAnswers": [
-        "chadwick boseman",
-        "boseman"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -391,10 +322,6 @@
       "difficulty": 2,
       "roundType": "individual",
       "questionText": "What TV show features a chemistry teacher who turns to cooking meth?",
-      "answer": "Breaking Bad",
-      "acceptedAnswers": [
-        "breaking bad"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -412,12 +339,6 @@
       "difficulty": 2,
       "roundType": "individual",
       "questionText": "Which artist released the album 'Lemonade' in 2016?",
-      "answer": "Beyoncé",
-      "acceptedAnswers": [
-        "beyoncé",
-        "beyonce",
-        "bey"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -441,10 +362,6 @@
       "difficulty": 3,
       "roundType": "individual",
       "questionText": "What Oscar-winning 2021 film features a Deaf family in a fishing town?",
-      "answer": "CODA",
-      "acceptedAnswers": [
-        "coda"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -462,10 +379,6 @@
       "difficulty": 1,
       "roundType": "individual",
       "questionText": "What streaming service produces 'Stranger Things'?",
-      "answer": "Netflix",
-      "acceptedAnswers": [
-        "netflix"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -483,11 +396,6 @@
       "difficulty": 1,
       "roundType": "potpourri",
       "questionText": "What color do you get when you mix red and blue?",
-      "answer": "Purple",
-      "acceptedAnswers": [
-        "purple",
-        "violet"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -511,11 +419,6 @@
       "difficulty": 1,
       "roundType": "potpourri",
       "questionText": "How many sides does a hexagon have?",
-      "answer": "6",
-      "acceptedAnswers": [
-        "6",
-        "six"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -533,13 +436,6 @@
       "difficulty": 2,
       "roundType": "potpourri",
       "questionText": "What is the most-liked photo on Instagram as of 2024?",
-      "answer": "A photo of an egg",
-      "acceptedAnswers": [
-        "a photo of an egg",
-        "an egg",
-        "the egg",
-        "egg"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -557,11 +453,6 @@
       "difficulty": 2,
       "roundType": "potpourri",
       "questionText": "In sign language, what does tapping your chin with an open hand typically mean?",
-      "answer": "Thank you",
-      "acceptedAnswers": [
-        "thank you",
-        "thanks"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -585,11 +476,6 @@
       "difficulty": 3,
       "roundType": "potpourri",
       "questionText": "What is the fear of long words ironically called?",
-      "answer": "Hippopotomonstrosesquippedaliophobia",
-      "acceptedAnswers": [
-        "hippopotomonstrosesquippedaliophobia",
-        "hippopotomonstrosesquipedaliophobia"
-      ],
       "answerValidationTags": [
         "exact"
       ],
@@ -607,11 +493,6 @@
       "difficulty": 1,
       "roundType": "potpourri",
       "questionText": "What animal is Sonic the Hedgehog?",
-      "answer": "A hedgehog",
-      "acceptedAnswers": [
-        "a hedgehog",
-        "hedgehog"
-      ],
       "answerValidationTags": [
         "exact"
       ],
